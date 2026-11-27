@@ -1030,3 +1030,6 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
 .anuncio-faixa{margin:22px auto}
 .anuncio-caixa{flex-direction:column;align-items:flex-start;margin-bottom:18px}
 @media (max-width:640px){.anuncio-faixa{flex-direction:column;align-items:flex-start}}
+/* manchetes na cor da editoria (como os grandes portais): futebol de uma cor, cultura e famosos de outra etc. */
+.linha h3,.cmp b,.foto-card h3,.q-rel,.relac a{color:color-mix(in srgb,var(--cor,#fff) 38%,#ffffff)}
+.linha:hover h3,.cmp:hover b,.foto-card:hover h3{color:#fff}

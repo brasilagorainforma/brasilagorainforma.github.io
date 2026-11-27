@@ -74,7 +74,7 @@ const SECOES = [
     nome: "Cultura",
     cor: "#d9480f",
     desc: "Música, cinema, TV, festas populares e a agenda do país.",
-    editorias: ["CULTURA", "SHOW", "MÚSICA", "CINEMA", "TV", "LAZER", "EVENTO", "EVENTOS"],
+    editorias: ["CULTURA", "SHOW", "MÚSICA", "CINEMA", "TV", "LAZER", "EVENTO", "EVENTOS", "FAMOSOS", "ENTRETENIMENTO", "CELEBRIDADES"],
   },
 ];
 const URGENTE = "#b3122e";
@@ -1334,7 +1334,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "25";
+const VERSAO_SITE = "26";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
