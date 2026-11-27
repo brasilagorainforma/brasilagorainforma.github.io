@@ -1130,3 +1130,10 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
 #instalar{background:#0c1d3d !important;color:#e8eef9 !important;border:1px solid rgba(245,183,0,.5)}
 #instalar p,#instalar b{color:#e8eef9 !important}
 #instalar .fechar{color:#9fb0cc !important}
+@media (max-width:640px){
+  .topo .nome{font-size:13px;letter-spacing:0}
+  .topo .nome small{font-size:7.5px;letter-spacing:.8px}
+  .hero-lado{grid-template-rows:none !important}
+  .sobre-card.lateral-c{aspect-ratio:auto !important;height:auto !important;min-height:96px !important}
+  .sobre-card.lateral-c img{height:auto !important;min-height:0;aspect-ratio:auto !important;align-self:stretch;object-fit:cover}
+}
