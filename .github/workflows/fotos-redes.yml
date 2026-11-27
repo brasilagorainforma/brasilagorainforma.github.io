@@ -1,0 +1,36 @@
+name: Fotos para as artes das redes
+# baixa as fotos (Agência Brasil, Wikimedia) listadas em midia/fotos-redes/lista.json
+# para dentro do repositório, para montar as artes de story e feed com a mesma foto do site
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [midia/fotos-redes/lista.json]
+permissions:
+  contents: write
+jobs:
+  baixar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          cd midia/fotos-redes
+          python3 - <<'PY'
+          import json, urllib.request, os
+          for it in json.load(open("lista.json")):
+              p = it["nome"] + ".jpg"
+              if os.path.exists(p) and os.path.getsize(p) > 5000:
+                  continue
+              try:
+                  req = urllib.request.Request(it["url"], headers={"User-Agent": "BrasilAgoraInforma/1.0 (https://brasilagorainforma.github.io)"})
+                  open(p, "wb").write(urllib.request.urlopen(req, timeout=60).read())
+                  print("ok", p, os.path.getsize(p))
+              except Exception as e:
+                  print("falhou", p, e)
+          PY
+      - run: |
+          git config user.name "Brasil Agora Informa"
+          git config user.email "noreply@brasilagorainforma.invalid"
+          git add midia/fotos-redes
+          git commit -m "Fotos para as artes das redes" || echo "nada novo"
+          git push
