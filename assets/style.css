@@ -1137,3 +1137,9 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
   .sobre-card.lateral-c{aspect-ratio:auto !important;height:auto !important;min-height:96px !important}
   .sobre-card.lateral-c img{height:auto !important;min-height:0;aspect-ratio:auto !important;align-self:stretch;object-fit:cover}
 }
+@media (max-width:640px){
+  h2.secao{font-size:19px !important}
+  .compactas.wrap{padding-left:12px;padding-right:12px}
+  .cmp-grade{gap:8px}
+  .topo .btn-avisos{width:32px;height:32px;font-size:14px !important}
+}
