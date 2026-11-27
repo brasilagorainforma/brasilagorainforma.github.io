@@ -214,12 +214,15 @@ async function carregarFutebol() {
   const el = $("#futebol");
   if (!el) return;
   try {
-    const agora = new Date();
-    const ini = new Date(agora - 7 * 864e5), fim = new Date(+agora + 10 * 864e5);
-    const [tab, jogos] = await Promise.all([
+    const agora = Date.now();
+    // a API só responde um dia por vez: busca de 7 dias atrás até 10 dias à frente
+    const dias = Array.from({ length: 18 }, (_, i) => ymd(new Date(agora + (i - 7) * 864e5)));
+    const [tab, ...porDia] = await Promise.all([
       fetch(`${ESPN}/v2/sports/soccer/bra.1/standings`).then((r) => r.json()),
-      fetch(`${ESPN}/site/v2/sports/soccer/bra.1/scoreboard?dates=${ymd(ini)}-${ymd(fim)}&limit=200`).then((r) => r.json()),
+      ...dias.map((d) => fetch(`${ESPN}/site/v2/sports/soccer/bra.1/scoreboard?dates=${d}`).then((r) => r.json()).catch(() => ({}))),
     ]);
+    const vistos = new Set();
+    const jogos = { events: porDia.flatMap((j) => j.events || []).filter((e) => !vistos.has(e.id) && vistos.add(e.id)) };
     const ent = tab.children?.[0]?.standings?.entries || [];
     const st = (e, k) => (e.stats.find((s) => s.name === k) || {}).displayValue || "";
     ent.sort((a, b) => Number(st(a, "rank")) - Number(st(b, "rank")));
@@ -1334,7 +1337,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "26";
+const VERSAO_SITE = "27";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
