@@ -59,7 +59,7 @@ const SECOES = [
     slug: "mundo",
     nome: "Mundo",
     cor: "#5f2b8f",
-    desc: "O que acontece lá fora e como isso chega até o Brasil.",
+    desc: "O que acontece lá fora e mexe com o Brasil: guerras, tarifas, eleições e crises, e o que muda para você.",
     editorias: ["MUNDO", "INTERNACIONAL"],
   },
   {
@@ -177,7 +177,7 @@ function montarTopo(ativa) {
   <div class="hoje"><div class="wrap"><span>${hoje}</span><span><b>Notícia confirmada</b>, sempre com a fonte · <a href="sobre.html">Quem somos</a></span></div></div>`;
   $("#rodape").innerHTML = `
   <footer class="rodape"><div class="wrap">
-    <div><b style="color:#fff">Brasil Agora Informa</b> · As notícias do Brasil, agora<br>
+    <div><b style="color:#fff">Brasil Agora Informa</b> · As notícias do Brasil e do mundo, agora<br>
     Cada notícia cita o veículo que publicou primeiro. Viu um erro? Fale com a gente no Instagram.</div>
     <nav class="mapa">${SECOES.map((s) => `<a href="./?secao=${s.slug}">${s.nome}</a>`).join("")}<a href="agenda.html">Agenda</a><a href="sobre.html">Quem somos</a>${REDES.whatsapp ? `<a href="${REDES.whatsapp}" target="_blank" rel="noopener">💬 Avisos no WhatsApp</a>` : ""}</nav>
     <nav class="redes">${redesHTML()}</nav>
@@ -570,6 +570,7 @@ async function materia() {
       ${metaHTML(n, fonte)}
       ${midia}
       <p class="linha-fina">${esc(primeiro)}</p>
+      ${n.brasil ? `<div class="caixa-brasil"><b>🇧🇷 O que muda para o Brasil</b>${esc(n.brasil)}</div>` : ""}
       <div class="texto">${demais.map((p) => `<p>${esc(p)}</p>`).join("")}</div>
       ${e ? `<div class="caixa-evento"><b>📅 Anote:</b> ${dataBR(e.data)}${e.fim && e.fim !== e.data ? " a " + dataBR(e.fim) : ""}${e.hora ? " · " + esc(e.hora) : ""}${e.local ? "<br>📍 " + esc(e.local) : ""}</div>` : ""}
       <div class="caixa-fonte">📰 Informação publicada originalmente por <b>${fonte}</b>. O Brasil Agora Informa só divulga notícia confirmada e sempre cita a fonte.</div>
@@ -1125,7 +1126,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "15";
+const VERSAO_SITE = "16";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {

@@ -900,3 +900,5 @@ html,body{overflow-x:clip}
 .foto-card.so-texto h3{font-size:18px}
 .foto-card.so-texto p{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 .bloco2.escuro .foto-card.so-texto p{color:#cbbfe6}
+.caixa-brasil{margin:18px 0;padding:16px 18px;border-radius:10px;background:linear-gradient(135deg,#e9f7ee,#fff8dc);border-left:5px solid #009c3b;font-size:16px;line-height:1.5}
+.caixa-brasil b{display:block;font:800 13px Archivo,sans-serif;text-transform:uppercase;letter-spacing:.8px;color:#0b2a5b;margin-bottom:4px}
