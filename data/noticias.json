@@ -1,6 +1,311 @@
 {
   "noticias": [
     {
+      "id": "2026-11-26-raio-atinge-plataforma-da-petrobras-no-pre-sal-ninguem-se-fe",
+      "data": "2026-11-26",
+      "hora": "22h",
+      "editoria": "BRASIL",
+      "titulo": "Raio atinge plataforma da Petrobras no pré-sal; ninguém se feriu",
+      "resumo": "Um raio atingiu o navio-plataforma P-77 da Petrobras e provocou um princípio de incêndio, que foi controlado rapidamente pelas equipes de segurança. Segundo a empresa, não houve feridos nem danos aos equipamentos.",
+      "texto": [
+        "Um raio atingiu o navio-plataforma P-77 da Petrobras e provocou um princípio de incêndio, que foi controlado rapidamente pelas equipes de segurança. Segundo a empresa, não houve feridos nem danos aos equipamentos.",
+        "A P-77 fica no Campo de Búzios, no pré-sal da Bacia de Santos, a cerca de 200 quilômetros da costa do Rio de Janeiro. Ela opera desde 2019 e pode produzir até 150 mil barris de petróleo por dia."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/raio-atinge-plataforma-da-petrobras-200-quilometros-da-costa-do-rio",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Oil_platform_P-51_%28Brazil%29.jpg/1280px-Oil_platform_P-51_%28Brazil%29.jpg",
+      "credito_foto": "Imagem ilustrativa, plataforma P-51 (arquivo): Divulgação Petrobras/Agência Brasil (CC BY 3.0 BR)"
+    },
+    {
+      "id": "2026-11-26-predio-do-antigo-doi-codi-no-rio-vira-patrimonio-nacional",
+      "data": "2026-11-26",
+      "hora": "22h",
+      "editoria": "CULTURA",
+      "titulo": "Prédio do antigo DOI-Codi no Rio vira patrimônio nacional",
+      "resumo": "O Iphan aprovou nesta quinta-feira (26) o tombamento do prédio onde funcionou o DOI-Codi durante a ditadura militar, na Tijuca, zona norte do Rio de Janeiro.",
+      "texto": [
+        "O Iphan aprovou nesta quinta-feira (26) o tombamento do prédio onde funcionou o DOI-Codi durante a ditadura militar, na Tijuca, zona norte do Rio de Janeiro.",
+        "O imóvel, nos fundos do 1º Batalhão de Polícia do Exército, foi palco de violações de direitos humanos entre as décadas de 1960 e 1980. Segundo a Comissão Nacional da Verdade, foi lá que o ex-deputado Rubens Paiva foi morto.",
+        "O tombamento reconhece o local como bem do patrimônio nacional, para preservar a memória do período de 1964 a 1985."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/iphan-aprova-tombamento-do-antigo-predio-do-doi-codi-no-rio",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-pix-vai-ganhar-novas-regras-de-seguranca-e-devolucao-mais-fa",
+      "data": "2026-11-26",
+      "hora": "21h",
+      "editoria": "SEU DINHEIRO",
+      "titulo": "Pix vai ganhar novas regras de segurança e devolução mais fácil em 2027",
+      "resumo": "O Banco Central vai mudar o Pix em 2027. As novidades incluem melhorias no Pix Automático, ferramentas para identificar fraudes e um jeito mais fácil de recuperar dinheiro mandado por engano.",
+      "texto": [
+        "O Banco Central vai mudar o Pix em 2027. As novidades incluem melhorias no Pix Automático, ferramentas para identificar fraudes e um jeito mais fácil de recuperar dinheiro mandado por engano.",
+        "Uma das prioridades é acabar com o uso do campo de mensagem do Pix para mandar ameaças e ofensas. O BC vai criar regras e soluções técnicas para combater esse tipo de abuso.",
+        "As mudanças foram apresentadas nesta quinta-feira (26), na reunião do Fórum Pix, que também fez o balanço do que mudou em 2026."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/pix-tera-novas-regras-de-seguranca-e-melhorias-em-2027",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-stf-decide-que-estados-e-prefeituras-tem-de-pagar-o-piso-dos",
+      "data": "2026-11-26",
+      "hora": "21h",
+      "editoria": "JUSTIÇA",
+      "titulo": "STF decide que estados e prefeituras têm de pagar o piso dos professores",
+      "resumo": "O Supremo Tribunal Federal decidiu nesta quinta-feira (26) que estados, municípios e o Distrito Federal são obrigados a pagar o piso nacional dos professores da educação básica pública, hoje de R$ 5.130,63.",
+      "texto": [
+        "O Supremo Tribunal Federal decidiu nesta quinta-feira (26) que estados, municípios e o Distrito Federal são obrigados a pagar o piso nacional dos professores da educação básica pública, hoje de R$ 5.130,63.",
+        "Se o piso não for pago, a Justiça poderá mandar pagar. O STF também definiu que o piso vale para o salário-base e que as leis locais devem garantir o reflexo nas outras faixas da carreira.",
+        "A decisão veio ao rejeitar recursos do governo de São Paulo e da prefeitura de Riolândia, no interior paulista, que alegavam depender de lei própria para pagar o valor."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/stf-estados-e-municipios-sao-obrigados-pagar-piso-dos-professores",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/29.09.2025_%E2%80%93_Sess%C3%A3o_Solene_de_Posse_do_Ministro_Edson_Fachin_no_cargo_de_Presidente_e_do_Ministro_Alexandre_de_Moraes_no_cargo_de_Vice-Presidente_do_Supremo_Tribunal_Federal_e_do_Conselho_Nacional_de_Justi%C3%A7a_14.jpg/1280px-thumbnail.jpg",
+      "credito_foto": "Plenário do STF (arquivo): perfil Lula Oficial, via Wikimedia Commons (CC BY-SA 4.0)",
+      "destaque": true
+    },
+    {
+      "id": "2026-11-26-carnaval-de-sp-prefeitura-busca-patrocinio-para-780-blocos",
+      "data": "2026-11-26",
+      "hora": "21h",
+      "editoria": "CULTURA",
+      "titulo": "Carnaval de SP: prefeitura busca patrocínio para 780 blocos",
+      "resumo": "A prefeitura de São Paulo abriu um novo edital para encontrar patrocinadores para os 780 blocos que vão desfilar nos oito dias de carnaval de 2027. A cota mínima caiu para R$ 36 milhões.",
+      "texto": [
+        "A prefeitura de São Paulo abriu um novo edital para encontrar patrocinadores para os 780 blocos que vão desfilar nos oito dias de carnaval de 2027. A cota mínima caiu para R$ 36 milhões.",
+        "No primeiro edital, que pedia R$ 40 milhões, nenhuma empresa se interessou. As propostas serão conhecidas em 16 de dezembro. Empresas de apostas não podem participar.",
+        "Os desfiles vão acontecer em todas as regiões da cidade, com mais blocos no centro, em Pinheiros, na Lapa e na Vila Mariana."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/sp-lanca-edital-em-busca-de-patrocinio-para-780-blocos-de-carnaval",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Carnalval_SP_2013_-_4692_%288460037019%29.jpg/1280px-Carnalval_SP_2013_-_4692_%288460037019%29.jpg",
+      "credito_foto": "Carnaval de São Paulo (arquivo): Jardiel Carvalho, via Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "id": "2026-11-26-receita-apreende-58-toneladas-de-camisas-de-time-e-tenis-sus",
+      "data": "2026-11-26",
+      "hora": "21h",
+      "editoria": "BRASIL",
+      "titulo": "Receita apreende 58 toneladas de camisas de time e tênis suspeitos de falsificação",
+      "resumo": "A Receita Federal apreendeu no Porto Seco de Resende (RJ) três contêineres com cerca de 58 toneladas de mercadorias vindas da China, como camisas de times de futebol e tênis. A carga foi avaliada em R$ 18 milhões.",
+      "texto": [
+        "A Receita Federal apreendeu no Porto Seco de Resende (RJ) três contêineres com cerca de 58 toneladas de mercadorias vindas da China, como camisas de times de futebol e tênis. A carga foi avaliada em R$ 18 milhões.",
+        "Nos documentos, os produtos estavam declarados como bolsas e malas, que ficavam nas primeiras fileiras dos contêineres para disfarçar. A Receita colheu amostras para confirmar se os itens são falsificados."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/receita-apreende-58-toneladas-de-roupas-e-tenis-nao-declarados",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-lula-recebe-cleitinho-e-discute-divida-de-r-180-bilhoes-de-m",
+      "data": "2026-11-26",
+      "hora": "20h",
+      "editoria": "POLÍTICA",
+      "titulo": "Lula recebe Cleitinho e discute dívida de R$ 180 bilhões de Minas Gerais",
+      "resumo": "O presidente Lula e o governador eleito de Minas Gerais, Cleitinho, se reuniram nesta quinta-feira (26) no Palácio da Alvorada para tratar da dívida do estado com a União, de cerca de R$ 180 bilhões.",
+      "texto": [
+        "O presidente Lula e o governador eleito de Minas Gerais, Cleitinho, se reuniram nesta quinta-feira (26) no Palácio da Alvorada para tratar da dívida do estado com a União, de cerca de R$ 180 bilhões.",
+        "Os dois discutiram formas de pagamento dentro do Propag, o programa federal de renegociação das dívidas dos estados. O ministro da Fazenda, Dario Durigan, participou do encontro.",
+        "Segundo Lula, a equipe do governador eleito vai se reunir com técnicos da Fazenda, e qualquer proposta mineira terá de seguir as regras do programa."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/lula-e-cleitinho-debatem-negociacao-de-divida-de-minas-gerais",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Imagens_de_Bras%C3%ADlia_%2854279561110%29.jpg/1280px-Imagens_de_Bras%C3%ADlia_%2854279561110%29.jpg",
+      "credito_foto": "Palácio da Alvorada (arquivo): Agência Senado, via Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "id": "2026-11-26-comissao-aprova-base-do-orcamento-de-2027-com-corte-de-r-2-0",
+      "data": "2026-11-26",
+      "hora": "20h",
+      "editoria": "CONGRESSO",
+      "titulo": "Comissão aprova base do Orçamento de 2027 com corte de R$ 2,09 bilhões",
+      "resumo": "A Comissão Mista de Orçamento do Congresso aprovou nesta quinta-feira (26) o relatório preliminar do Orçamento de 2027. O texto corta R$ 2,09 bilhões de gastos não obrigatórios do governo para abrir espaço a emendas de parlamentares.",
+      "texto": [
+        "A Comissão Mista de Orçamento do Congresso aprovou nesta quinta-feira (26) o relatório preliminar do Orçamento de 2027. O texto corta R$ 2,09 bilhões de gastos não obrigatórios do governo para abrir espaço a emendas de parlamentares.",
+        "O corte pode atingir ministérios como Saúde e Infraestrutura e obras do PAC. Só o Fundo Nacional de Saúde perde R$ 658,3 milhões, quase um terço do total.",
+        "O relator, senador Eduardo Braga (MDB-AM), disse que pretende recompor verbas de saúde, educação e assistência social durante a votação da proposta."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmo-aprova-relatorio-do-orcamento-de-2027-com-corte-de-r-209-bilhoes",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Congresso_Nacional_-_50495053552.jpg/1280px-Congresso_Nacional_-_50495053552.jpg",
+      "credito_foto": "Congresso Nacional (arquivo): Senado Federal, via Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "id": "2026-11-26-golpe-da-falsa-central-bb-e-google-bloqueiam-77-mil-ligacoes",
+      "data": "2026-11-26",
+      "hora": "19h",
+      "editoria": "GOLPES",
+      "titulo": "Golpe da falsa central: BB e Google bloqueiam 77 mil ligações em uma semana",
+      "resumo": "O Banco do Brasil e o Google bloquearam mais de 77 mil ligações de golpistas na primeira semana de uma ação conjunta contra o golpe da falsa central.",
+      "texto": [
+        "O Banco do Brasil e o Google bloquearam mais de 77 mil ligações de golpistas na primeira semana de uma ação conjunta contra o golpe da falsa central.",
+        "Os criminosos falsificam o número 4004-0001, o telefone oficial do banco, para parecer que a ligação é verdadeira. Agora, celulares Android barram as chamadas que usam esse número de forma indevida.",
+        "Atenção: o 4004-0001 só recebe ligações de clientes. O banco não liga para ninguém a partir desse número."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bb-e-google-bloqueiam-mais-de-77-mil-chamadas-fraudulentas",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Bancodobrasil2006.jpg/1280px-Bancodobrasil2006.jpg",
+      "credito_foto": "Imagem ilustrativa (arquivo): Valter Campanato/Agência Brasil (CC BY 3.0 BR)"
+    },
+    {
+      "id": "2026-11-26-governo-prorroga-por-30-dias-o-desconto-de-r-2-12-no-litro-d",
+      "data": "2026-11-26",
+      "hora": "19h",
+      "editoria": "ECONOMIA",
+      "titulo": "Governo prorroga por 30 dias o desconto de R$ 2,12 no litro do diesel",
+      "resumo": "O Ministério da Fazenda confirmou nesta quinta-feira (26) que vai manter por mais 30 dias a subvenção de R$ 2,12 por litro de diesel vendido no país. A portaria sai no Diário Oficial desta sexta-feira (27).",
+      "texto": [
+        "O Ministério da Fazenda confirmou nesta quinta-feira (26) que vai manter por mais 30 dias a subvenção de R$ 2,12 por litro de diesel vendido no país. A portaria sai no Diário Oficial desta sexta-feira (27).",
+        "A medida tenta segurar o efeito da alta do petróleo no mundo e evitar reajustes bruscos nas bombas, que pesam no frete e no preço de tudo o que viaja de caminhão.",
+        "Segundo o Ministério do Planejamento, a prorrogação deve custar entre R$ 8 bilhões e R$ 10,5 bilhões."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-prorroga-subsidio-de-r-212-ao-diesel-por-mais-30-dias",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-ficar-parado-e-ter-sintomas-de-depressao-triplica-risco-para",
+      "data": "2026-11-26",
+      "hora": "19h",
+      "editoria": "SAÚDE",
+      "titulo": "Ficar parado e ter sintomas de depressão triplica risco para o coração, diz estudo",
+      "resumo": "Um estudo do Hospital Israelita Albert Einstein mostra que a soma de sedentarismo e sintomas de depressão aumenta muito o risco de doenças do coração e do metabolismo.",
+      "texto": [
+        "Um estudo do Hospital Israelita Albert Einstein mostra que a soma de sedentarismo e sintomas de depressão aumenta muito o risco de doenças do coração e do metabolismo.",
+        "Quem tinha as duas condições teve três vezes mais chance de cintura acima do recomendado e duas vezes mais chance de sobrepeso ou obesidade, além de mais risco de pressão alta e diabetes.",
+        "A pesquisa analisou mais de 51 mil adultos. Foram considerados ativos os que faziam pelo menos 150 minutos de exercício por semana, como recomenda a OMS."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/sedentarismo-e-sintomas-depressivos-elevam-risco-cardiometabolico",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-turistas-estrangeiros-gastaram-recorde-de-r-53-8-bilhoes-no",
+      "data": "2026-11-26",
+      "hora": "18h",
+      "editoria": "ECONOMIA",
+      "titulo": "Turistas estrangeiros gastaram recorde de R$ 53,8 bilhões no Brasil em 2026",
+      "resumo": "Os visitantes estrangeiros gastaram US$ 9,25 bilhões (cerca de R$ 53,8 bilhões) no Brasil de janeiro a outubro, o maior valor já registrado para o período, segundo o Ministério do Turismo.",
+      "texto": [
+        "Os visitantes estrangeiros gastaram US$ 9,25 bilhões (cerca de R$ 53,8 bilhões) no Brasil de janeiro a outubro, o maior valor já registrado para o período, segundo o Ministério do Turismo.",
+        "O resultado é 9,3% maior que o do mesmo período de 2025. Só em outubro, os turistas internacionais deixaram US$ 867 milhões no país.",
+        "Os números têm como base os dados do setor externo divulgados nesta quinta-feira (26) pelo Banco Central."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/turismo-estrangeiro-movimentou-r-53-bi-na-economia-brasileira-em-2026",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Cidade_de_luz_e_cor.jpg/1280px-Cidade_de_luz_e_cor.jpg",
+      "credito_foto": "Rio de Janeiro, imagem ilustrativa: Carlos André Viana, via Wikimedia Commons (CC BY-SA 3.0)"
+    },
+    {
+      "id": "2026-11-26-black-friday-7-em-cada-10-consumidores-ja-se-sentiram-engana",
+      "data": "2026-11-26",
+      "hora": "18h",
+      "editoria": "SEU DINHEIRO",
+      "titulo": "Black Friday: 7 em cada 10 consumidores já se sentiram enganados, diz Procon-SP",
+      "resumo": "Uma pesquisa do Procon-SP mostra que 69,85% dos consumidores já se sentiram enganados em compras na Black Friday, que acontece nesta sexta-feira (27).",
+      "texto": [
+        "Uma pesquisa do Procon-SP mostra que 69,85% dos consumidores já se sentiram enganados em compras na Black Friday, que acontece nesta sexta-feira (27).",
+        "Mais da metade dos entrevistados disse que os preços caem só em parte, e quase 40% acham que, no geral, não há desconto de verdade. A queixa mais comum é o preço disfarçado de promoção.",
+        "Dica: compare o preço dos produtos nos dias anteriores e guarde os anúncios para exigir a oferta, se for preciso."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/quase-70-dos-consumidores-ja-se-sentiram-enganados-na-black-friday",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-eua-ameacam-taxar-avioes-e-alckmin-chama-ideia-de-totalmente",
+      "data": "2026-11-26",
+      "hora": "17h",
+      "editoria": "MUNDO",
+      "titulo": "EUA ameaçam taxar aviões e Alckmin chama ideia de \"totalmente descabida\"",
+      "resumo": "O vice-presidente Geraldo Alckmin criticou nesta quinta-feira (26) a possível tarifa dos Estados Unidos sobre a importação de aviões. \"Não há no mundo tarifa para setor aeronáutico\", disse.",
+      "texto": [
+        "O vice-presidente Geraldo Alckmin criticou nesta quinta-feira (26) a possível tarifa dos Estados Unidos sobre a importação de aviões. \"Não há no mundo tarifa para setor aeronáutico\", disse.",
+        "Na véspera, o representante de Comércio dos EUA, Jamieson Greer, propôs novas tarifas sobre o setor, o que pode atingir a Embraer, uma das maiores fabricantes de aviões do mundo.",
+        "Alckmin afirmou que o governo vai trabalhar para reverter a medida. Ele falou no Aeroporto de Brasília, na chegada do voo inaugural do Embraer E2 da Latam."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/alckmin-trata-possivel-tarifa-avioes-do-brasil-como-descabida",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-recorde-29-dos-jovens-de-18-a-24-anos-estao-na-faculdade-ou",
+      "data": "2026-11-26",
+      "hora": "17h",
+      "editoria": "BRASIL",
+      "titulo": "Recorde: 29% dos jovens de 18 a 24 anos estão na faculdade ou já se formaram",
+      "resumo": "O Brasil bateu recorde em 2025: 29% dos jovens de 18 a 24 anos frequentavam um curso superior ou já tinham concluído a graduação. Os dados são do Censo da Educação Superior, divulgado nesta quinta-feira (26) pelo Inep.",
+      "texto": [
+        "O Brasil bateu recorde em 2025: 29% dos jovens de 18 a 24 anos frequentavam um curso superior ou já tinham concluído a graduação. Os dados são do Censo da Educação Superior, divulgado nesta quinta-feira (26) pelo Inep.",
+        "Nos cursos presenciais, os alunos são mais novos: 75% dos que entraram tinham até 26 anos. Nos cursos a distância e semipresenciais, a idade é maior.",
+        "O país também chegou a 10,6 milhões de matrículas no ensino superior, outro recorde."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/numero-de-jovens-de-18-24-anos-na-graduacao-bate-recorde-no-pais",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-linhas-11-coral-e-12-safira-voltam-para-a-concessionaria-em",
+      "data": "2026-11-26",
+      "hora": "16h",
+      "editoria": "BRASIL",
+      "titulo": "Linhas 11-Coral e 12-Safira voltam para a concessionária em São Paulo",
+      "resumo": "A Trivia Trens retomou nesta quinta-feira (26) a operação das linhas 11-Coral e 12-Safira, na Grande São Paulo. Desde julho, o serviço estava com a CPTM.",
+      "texto": [
+        "A Trivia Trens retomou nesta quinta-feira (26) a operação das linhas 11-Coral e 12-Safira, na Grande São Paulo. Desde julho, o serviço estava com a CPTM.",
+        "A empresa privada tinha assumido as linhas em julho, mas três dias depois uma falha de energia parou os trens e um incêndio atingiu um vagão da Linha 12, obrigando passageiros a andar pelos trilhos.",
+        "Segundo a Trivia, os procedimentos de operação e de segurança foram reforçados."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/trivia-trens-retoma-operacao-das-linhas-11-coral-e-12-safira",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Trem_Linha_Coral_CPTM.jpg/1280px-Trem_Linha_Coral_CPTM.jpg",
+      "credito_foto": "Trem da CPTM (arquivo): Governo do Estado de São Paulo, via Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "id": "2026-11-26-anvisa-manda-recolher-canetas-de-tirzepatida-e-retatrutida-s",
+      "data": "2026-11-26",
+      "hora": "15h",
+      "editoria": "SAÚDE",
+      "titulo": "Anvisa manda recolher canetas de tirzepatida e retatrutida sem registro",
+      "resumo": "A Anvisa determinou a apreensão dos produtos TZ Gold (tirzepatida), Retatrutide e GHK-CU, da Ayus Genetics. A decisão saiu no Diário Oficial desta quinta-feira (26).",
+      "texto": [
+        "A Anvisa determinou a apreensão dos produtos TZ Gold (tirzepatida), Retatrutide e GHK-CU, da Ayus Genetics. A decisão saiu no Diário Oficial desta quinta-feira (26).",
+        "Segundo a agência, os produtos não têm registro, são feitos por empresa não identificada e não podem ser vendidos, divulgados nem usados.",
+        "A tirzepatida é o princípio ativo do Mounjaro, uma das canetas para emagrecer. A retatrutida ainda é experimental. Compre remédio só com receita e em farmácia autorizada."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/anvisa-proibe-tirzepatida-e-retatrutida-sem-registro",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-alerta-de-tempestade-em-seis-estados-com-chuva-forte-e-vento",
+      "data": "2026-11-26",
+      "hora": "12h",
+      "editoria": "CLIMA",
+      "titulo": "Alerta de tempestade em seis estados, com chuva forte e vento de até 100 km/h",
+      "resumo": "O Inmet emitiu alerta laranja, de perigo, para tempestades em Minas Gerais, Goiás, São Paulo, Rio de Janeiro, Espírito Santo e Mato Grosso do Sul.",
+      "texto": [
+        "O Inmet emitiu alerta laranja, de perigo, para tempestades em Minas Gerais, Goiás, São Paulo, Rio de Janeiro, Espírito Santo e Mato Grosso do Sul.",
+        "A previsão é de chuva de 30 a 60 milímetros por hora, ou até 100 milímetros no dia, com ventos de 60 a 100 km/h. Há risco de queda de galhos, alagamentos e falta de luz.",
+        "Durante as rajadas, não fique embaixo de árvores e não estacione perto de torres e placas. Em emergência, ligue 199 (Defesa Civil)."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/inmet-alerta-para-tempestades-em-boa-parte-do-pais",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/ISS-20_Thunderstorms_on_the_Brazilian_Horizon.jpg/1280px-ISS-20_Thunderstorms_on_the_Brazilian_Horizon.jpg",
+      "credito_foto": "Imagem ilustrativa: tempestades sobre o Brasil vistas do espaço, NASA (domínio público)"
+    },
+    {
       "id": "2026-11-26-trabuco-do-bradesco-aceita-comandar-a-fazenda-no-novo-govern",
       "data": "2026-11-26",
       "editoria": "ECONOMIA",
@@ -14,8 +319,7 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/trabuco-aceita-convite-de-lula-para-comandar-fazenda-diz-planalto",
-      "imagem": "",
-      "destaque": true
+      "imagem": ""
     },
     {
       "id": "2026-11-26-apagao-deixa-amazonas-roraima-e-parte-do-para-sem-luz",
@@ -46,7 +350,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/governo-e-produtores-repudiam-critica-de-macron-carne-brasileira",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Nelore_cattle_Brasil.jpg/1280px-Nelore_cattle_Brasil.jpg",
+      "credito_foto": "Imagem ilustrativa, gado nelore: Carlos Ebert, via Wikimedia Commons (CC BY 2.0)"
     },
     {
       "id": "2026-11-26-mega-sena-acumula-e-proximo-sorteio-deve-pagar-r-82-milhoes",
@@ -95,6 +401,176 @@
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/black-friday-veja-dicas-para-evitar-golpes-nas-compras-line",
       "imagem": ""
+    },
+    {
+      "id": "2026-11-25-atletico-mg-empata-no-fim-e-corinthians-segue-ameacado-no-br",
+      "data": "2026-11-25",
+      "hora": "23h",
+      "editoria": "BRASILEIRÃO",
+      "titulo": "Atlético-MG empata no fim e Corinthians segue ameaçado no Brasileirão",
+      "resumo": "Atlético-MG e Corinthians empataram por 1 a 1 nesta quarta-feira (25), na Arena MRV, em Belo Horizonte, no jogo que fechou a 36ª rodada do Campeonato Brasileiro. O gol do Galo saiu nos acréscimos.",
+      "texto": [
+        "Atlético-MG e Corinthians empataram por 1 a 1 nesta quarta-feira (25), na Arena MRV, em Belo Horizonte, no jogo que fechou a 36ª rodada do Campeonato Brasileiro. O gol do Galo saiu nos acréscimos.",
+        "O resultado foi ruim para os dois. O Corinthians até saiu da zona de rebaixamento, mas continua em situação delicada. O Atlético chegou a nove jogos sem vencer e perdeu a chance de entrar no G-6, que vai à Libertadores."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/brasileirao-atletico-mg-empata-no-fim-e-mantem-corinthians-ameacado",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Arena-mrv-2025.jpg/1280px-Arena-mrv-2025.jpg",
+      "credito_foto": "Arena MRV, em Belo Horizonte (arquivo): Heuler Silva, via Wikimedia Commons (CC BY-SA 4.0)"
+    },
+    {
+      "id": "2026-11-25-temporais-deixam-quatro-mortos-e-11-mil-atingidos-no-parana",
+      "data": "2026-11-25",
+      "hora": "18h",
+      "editoria": "BRASIL",
+      "titulo": "Temporais deixam quatro mortos e 11 mil atingidos no Paraná",
+      "resumo": "As chuvas fortes que atingem o Paraná desde o início da semana já afetaram cerca de 40 cidades e deixaram pelo menos quatro mortos, em Verê, Mato Rico e Nova Esperança, segundo o governo do estado.",
+      "texto": [
+        "As chuvas fortes que atingem o Paraná desde o início da semana já afetaram cerca de 40 cidades e deixaram pelo menos quatro mortos, em Verê, Mato Rico e Nova Esperança, segundo o governo do estado.",
+        "A Defesa Civil contabiliza quase 11 mil pessoas atingidas, 2,4 mil desalojadas e 242 desabrigadas. Quase 2 mil casas foram danificadas.",
+        "Ampére, no sudoeste do estado, é uma das cidades mais afetadas, com mais de 3 mil pessoas atingidas."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/temporais-deixam-mortos-e-desabrigados-no-parana",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-25-anvisa-manda-apreender-remedios-falsificados-contra-o-cancer",
+      "data": "2026-11-25",
+      "hora": "15h",
+      "editoria": "SAÚDE",
+      "titulo": "Anvisa manda apreender remédios falsificados contra o câncer",
+      "resumo": "A Anvisa determinou a apreensão de quatro lotes de remédios usados no tratamento do câncer, entre eles do Darzalex e do Imbruvica. A própria fabricante, a Janssen, informou que os produtos são irregulares.",
+      "texto": [
+        "A Anvisa determinou a apreensão de quatro lotes de remédios usados no tratamento do câncer, entre eles do Darzalex e do Imbruvica. A própria fabricante, a Janssen, informou que os produtos são irregulares.",
+        "Segundo a empresa, alguns lotes eram destinados a outros países, como a Turquia, e têm embalagens diferentes das registradas no Brasil, com erros de digitação.",
+        "Quem tiver dúvida sobre um remédio pode conferir o lote no site da Anvisa e procurar o médico ou o farmacêutico."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/anvisa-manda-apreender-medicamentos-falsificados-para-tratar-cancer",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-25-clima-brasil-sofre-com-a-falta-de-compromisso-de-outros-pais",
+      "data": "2026-11-25",
+      "hora": "14h",
+      "editoria": "MUNDO",
+      "titulo": "Clima: Brasil sofre com a falta de compromisso de outros países, diz ministro",
+      "resumo": "O ministro da Integração, Waldez Góes, disse nesta quarta-feira (25) que o Brasil é vítima da falta de compromisso de outros países no combate às mudanças climáticas.",
+      "texto": [
+        "O ministro da Integração, Waldez Góes, disse nesta quarta-feira (25) que o Brasil é vítima da falta de compromisso de outros países no combate às mudanças climáticas.",
+        "\"Mesmo que tenha diminuído em 50% o desmatamento da Amazônia, a gente sofre as consequências da irresponsabilidade dos governos de fora\", afirmou, ao comentar os efeitos do El Niño nas cidades brasileiras.",
+        "A fala foi no programa Bom Dia, Ministro, da EBC."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/clima-brasil-e-vitima-da-falta-de-compromisso-de-outros-diz-ministro",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-25-depois-do-caso-americanas-ccj-do-senado-aprova-crime-de-frau",
+      "data": "2026-11-25",
+      "hora": "13h",
+      "editoria": "CONGRESSO",
+      "titulo": "Depois do caso Americanas, CCJ do Senado aprova crime de fraude contábil",
+      "resumo": "A CCJ do Senado aprovou nesta quarta-feira (25) um projeto que cria o crime de fraude contábil para quem esconder a real situação financeira de empresas com ações na bolsa.",
+      "texto": [
+        "A CCJ do Senado aprovou nesta quarta-feira (25) um projeto que cria o crime de fraude contábil para quem esconder a real situação financeira de empresas com ações na bolsa.",
+        "A pena prevista é de dois a seis anos de prisão, mais multa, e pode dobrar conforme o tamanho do prejuízo. O projeto é da senadora Augusta Brito (PT-CE).",
+        "A proposta foi apresentada em 2023, depois do escândalo das Lojas Americanas, com fraudes estimadas em R$ 54 bilhões pela Polícia Federal."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/politica/noticia/2026-11/efeito-americanas-ccj-do-senado-tipifica-crime-de-fraude-contabil",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Plen%C3%A1rio_C%C3%A2mara_dos_Deputados_%2821448322260%29.jpg/1280px-Plen%C3%A1rio_C%C3%A2mara_dos_Deputados_%2821448322260%29.jpg",
+      "credito_foto": "Plenário da Câmara (arquivo): PMDB Nacional, via Wikimedia Commons (CC BY 2.0)"
+    },
+    {
+      "id": "2026-11-25-iemen-mais-de-364-mil-pessoas-fogem-de-casa-com-a-volta-da-g",
+      "data": "2026-11-25",
+      "hora": "12h",
+      "editoria": "MUNDO",
+      "titulo": "Iêmen: mais de 364 mil pessoas fogem de casa com a volta da guerra",
+      "resumo": "O chefe de ajuda humanitária da ONU, Tom Fletcher, está no Iêmen, onde a retomada dos combates entre o governo e os rebeldes houthis já obrigou mais de 364 mil pessoas a deixar suas casas desde agosto.",
+      "texto": [
+        "O chefe de ajuda humanitária da ONU, Tom Fletcher, está no Iêmen, onde a retomada dos combates entre o governo e os rebeldes houthis já obrigou mais de 364 mil pessoas a deixar suas casas desde agosto.",
+        "Segundo a ONU, a violência e o bloqueio de estradas impedem a chegada de comida e remédios, e hospitais e equipes de socorro estão sendo atacados.",
+        "Fletcher quer chamar a atenção do mundo para a crise e pedir mais dinheiro para a ajuda, que está em falta."
+      ],
+      "fonte": "ONU News",
+      "link": "https://news.un.org/pt/story/2026/11/1855006",
+      "imagem": "",
+      "foto": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Embargoed/2026/11/05-11-2026-UNICEF-Yemen.jpg/image770x420cropped.jpg",
+      "credito_foto": "© UNICEF/Ahmed Al-Basha"
+    },
+    {
+      "id": "2026-11-25-onu-129-mulheres-e-meninas-sao-mortas-por-dia-por-parceiros",
+      "data": "2026-11-25",
+      "hora": "10h",
+      "editoria": "MUNDO",
+      "titulo": "ONU: 129 mulheres e meninas são mortas por dia por parceiros ou parentes",
+      "resumo": "Cerca de 47 mil mulheres e meninas foram mortas em 2025 por parceiros ou outros membros da família, uma média de 129 por dia, segundo estudo do Unodc e da ONU Mulheres.",
+      "texto": [
+        "Cerca de 47 mil mulheres e meninas foram mortas em 2025 por parceiros ou outros membros da família, uma média de 129 por dia, segundo estudo do Unodc e da ONU Mulheres.",
+        "O número é menor que o de 2024, mas as agências dizem que a queda se deve à melhora nos dados dos países, e não a uma redução real dos crimes.",
+        "No Brasil, a Central de Atendimento à Mulher funciona pelo telefone 180, de graça e a qualquer hora."
+      ],
+      "fonte": "ONU News",
+      "link": "https://news.un.org/pt/story/2026/11/1855003",
+      "imagem": "",
+      "foto": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/11/24-11-2026-UN-Women-GBV-04.jpg/image770x420cropped.jpg",
+      "credito_foto": "© ONU Mulheres/Ryan Brown"
+    },
+    {
+      "id": "2026-11-25-ebola-tiroteios-e-chuvas-prendem-equipes-de-saude-no-congo",
+      "data": "2026-11-25",
+      "hora": "09h",
+      "editoria": "MUNDO",
+      "titulo": "Ebola: tiroteios e chuvas prendem equipes de saúde no Congo",
+      "resumo": "Funcionários da Organização Mundial da Saúde e socorristas que combatem o ebola na República Democrática do Congo ficaram presos numa maternidade na província de Ituri, no leste do país.",
+      "texto": [
+        "Funcionários da Organização Mundial da Saúde e socorristas que combatem o ebola na República Democrática do Congo ficaram presos numa maternidade na província de Ituri, no leste do país.",
+        "A região vive confrontos entre o Exército e grupos armados, e as chuvas fortes também impediram a retirada das equipes com segurança, segundo a OMS."
+      ],
+      "fonte": "ONU News",
+      "link": "https://news.un.org/pt/story/2026/11/1854998",
+      "imagem": "",
+      "foto": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/2026/09/10-09-2026-WFP_DRC_Ebola_Hotmeals_Preparation.jpg/image770x420cropped.jpg",
+      "credito_foto": "WFP/Arete/Seros Muyisa"
+    },
+    {
+      "id": "2026-11-25-jovens-afegaos-levam-ate-sete-meses-e-se-endividam-para-cheg",
+      "data": "2026-11-25",
+      "hora": "08h",
+      "editoria": "MUNDO",
+      "titulo": "Jovens afegãos levam até sete meses e se endividam para chegar à Europa",
+      "resumo": "Migrantes do Afeganistão que fogem do regime do Talibã estão levando até sete meses para atravessar a rota dos Bálcãs rumo à Europa, uma viagem que antes durava poucos dias.",
+      "texto": [
+        "Migrantes do Afeganistão que fogem do regime do Talibã estão levando até sete meses para atravessar a rota dos Bálcãs rumo à Europa, uma viagem que antes durava poucos dias.",
+        "Segundo a Organização Internacional para Migrações, eles param no caminho para trabalhar e pagar dívidas de milhares de euros feitas para financiar a travessia. A OIM ouviu mais de mil migrantes."
+      ],
+      "fonte": "ONU News",
+      "link": "https://news.un.org/pt/story/2026/11/1855013",
+      "imagem": "",
+      "foto": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/18-03-2026_UNICEF_Afghanistan.jpg/image770x420cropped.jpg",
+      "credito_foto": "© UNICEF/Omid Fazel"
+    },
+    {
+      "id": "2026-11-24-mais-de-100-paises-se-comprometem-a-vigiar-danos-de-produtos",
+      "data": "2026-11-24",
+      "hora": "15h",
+      "editoria": "MUNDO",
+      "titulo": "Mais de 100 países se comprometem a vigiar danos de produtos químicos à saúde",
+      "resumo": "Mais de 100 países se comprometeram a reforçar o monitoramento de doenças e danos ao meio ambiente causados por produtos químicos, na primeira conferência do Quadro Global sobre Produtos Químicos, em Genebra.",
+      "texto": [
+        "Mais de 100 países se comprometeram a reforçar o monitoramento de doenças e danos ao meio ambiente causados por produtos químicos, na primeira conferência do Quadro Global sobre Produtos Químicos, em Genebra.",
+        "O encontro também criou dois programas: um para melhorar as leis sobre químicos e resíduos e outro para envolver a indústria, começando por construção, eletrônicos, saúde e roupas."
+      ],
+      "fonte": "ONU News",
+      "link": "https://news.un.org/pt/story/2026/11/1854991",
+      "imagem": "",
+      "foto": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Libraries/Production%20Library/WHO_TM-071-adj.jpg/image770x420cropped.jpg",
+      "credito_foto": "OMS/Ernest Ankomah"
     }
   ]
 }

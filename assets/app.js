@@ -3,9 +3,9 @@
 const REDES = {
   whatsapp: "https://whatsapp.com/channel/0029Vb9aizt5Ejy0K0Xopf1O",
   instagram: "https://www.instagram.com/brasilagorainforma/",
-  facebook: "",
-  tiktok: "",
-  threads: "",
+  facebook: "https://www.facebook.com/profile.php?id=61596607397301",
+  tiktok: "https://www.tiktok.com/@brasilagorainforma",
+  threads: "https://www.threads.com/@brasilagorainforma",
   kwai: "",
 };
 const SELO = "icones/selo-96.png";
@@ -200,8 +200,14 @@ const metaHTML = (n, fonte) =>
 
 // Miniatura horizontal: foto se houver; senão um quadro na cor da seção.
 // Foto padrão por seção (uso livre, com crédito) para quando a notícia não trouxer foto.
-// Foto padrão por seção: só foto genérica, que não indique lugar ou fato específico. Vazio por enquanto.
-const FOTO_PADRAO = {};
+// Arte padrão por seção (capas 3D próprias): só ilustração genérica, nunca parece registro de fato.
+const ARTE = "Arte ilustrativa: Brasil Agora Informa";
+const FOTO_PADRAO = Object.fromEntries(
+  ["brasil", "politica", "economia", "servico", "saude", "esporte", "mundo", "tecnologia", "cultura"].map((s) => [
+    s,
+    { url: `midia/capas/${s}.jpg`, credito: ARTE },
+  ]),
+);
 // Sempre que possível, uma foto: a da notícia, a padrão da seção ou o card da notícia.
 const fotoDe = (n) =>
   n.foto || (FOTO_PADRAO[secaoDe(n).slug] || {}).url || n.imagem || "";
@@ -334,6 +340,34 @@ const telefonesBox =
     ${TELEFONES.map(([n, s]) => `<li><a href="tel:${n}"><b>${n}</b> ${s}</a></li>`).join("")}</ul></section>`;
 
 // ---------- páginas ----------
+// ---------- capa de portal ----------
+const horaDe = (n) => (n.hora ? esc(n.hora) : dataBR(n.data));
+const temFoto = (n) => !!fotoSrc(n.foto);
+// cartão com a foto ocupando tudo e o título por cima (manchetes)
+function sobreHTML(n, cls = "", largura) {
+  const f = fotoSrc(fotoDe(n), largura);
+  const fundo = f
+    ? `<img src="${f}" alt="" decoding="async" ${cls.includes("principal") ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.remove()" width="1200" height="675">`
+    : "";
+  return `<a class="sobre-card ${cls}" href="${linkMateria(n)}" style="--cor:${corDe(n)}">${fundo}
+    <div class="sobre-txt">${tagHTML(n)}<h2>${esc(n.titulo)}</h2>${cls.includes("principal") && n.resumo ? `<p>${esc(n.resumo)}</p>` : ""}<div class="meta">${horaDe(n)} · ${esc(n.fonte)}</div></div></a>`;
+}
+// cartão com foto em cima e título embaixo
+function fotoCardHTML(n, grande) {
+  return `<a class="foto-card${grande ? " grande" : ""}" href="${linkMateria(n)}" style="--cor:${corDe(n)}">${thumbHTML(n, true, 640)}
+    <div class="fc-corpo">${tagHTML(n)}<h3>${esc(n.titulo)}</h3>${grande && n.resumo ? `<p>${esc(n.resumo)}</p>` : ""}<div class="meta">${horaDe(n)} · ${esc(n.fonte)}</div></div></a>`;
+}
+function linhaHTML(n) {
+  return `<a class="linha" href="${linkMateria(n)}" style="--cor:${corDe(n)}"><span class="l-hora">${n.hora ? esc(n.hora) : dataBR(n.data)}</span>${thumbHTML(n, true, 330)}
+    <div>${tagHTML(n)}<h3>${esc(n.titulo)}</h3></div></a>`;
+}
+function plantaoHTML(lista) {
+  const ns = lista.slice(0, 10);
+  if (!ns.length) return "";
+  const itens = ns.map((n) => `<a href="${linkMateria(n)}"><b style="color:${corDe(n)}">${esc(secaoDe(n).nome)}</b> ${esc(n.titulo)}</a>`).join("");
+  return `<div class="plantao"><div class="wrap"><span class="p-rot">Agora</span><div class="p-trilho"><div class="p-faixa">${itens}${itens}</div></div></div></div>`;
+}
+
 async function capa() {
   const lista = await carregar();
   const secao = SECOES.find((s) => s.slug === params.get("secao"));
@@ -341,59 +375,136 @@ async function capa() {
   if (secao) return paginaSecao(lista, secao);
 
   if (!lista.length) {
-    $("#conteudo").innerHTML =
-      `<p class="vazio">Nenhuma notícia por aqui ainda.</p>`;
+    $("#conteudo").innerHTML = `<p class="vazio">Nenhuma notícia por aqui ainda.</p>`;
     return;
   }
-  // a manchete e as últimas são sempre da cidade; Estado, Brasil e Futebol vão em blocos próprios
-  const locais = lista.filter((n) => !secaoDe(n).fora);
-  const base = locais.length ? locais : lista;
-  const d = base.find((n) => n.destaque && n.data === base[0].data) || base[0];
-  const resto = base.filter((n) => n !== d);
-  const dupla = resto.slice(0, 2),
-    ultimas = resto.slice(2, 8),
-    depois = resto.slice(8);
+  $("#topo").insertAdjacentHTML("beforeend", plantaoHTML(lista));
+  const comFoto = lista.filter(temFoto);
+  const usadas = new Set();
+  const pega = (arr, k) => {
+    const r = arr.filter((n) => !usadas.has(n)).slice(0, k);
+    r.forEach((n) => usadas.add(n));
+    return r;
+  };
+  const hoje = lista[0].data;
+  const princ =
+    comFoto.find((n) => n.destaque && n.data === hoje) ||
+    lista.find((n) => n.destaque && n.data === hoje) ||
+    comFoto[0] ||
+    lista[0];
+  usadas.add(princ);
+  // ao lado da manchete: notícias de seções diferentes, com foto
+  const lado = [];
+  for (const n of comFoto) {
+    if (lado.length === 2) break;
+    if (usadas.has(n) || lado.some((x) => secaoDe(x) === secaoDe(n)) || secaoDe(n) === secaoDe(princ)) continue;
+    lado.push(n);
+    usadas.add(n);
+  }
+  const quatro = [];
+  for (const n of comFoto) {
+    if (quatro.length === 4) break;
+    if (usadas.has(n) || quatro.some((x) => secaoDe(x) === secaoDe(n))) continue;
+    quatro.push(n);
+    usadas.add(n);
+  }
+  const ultimas = lista.filter((n) => !usadas.has(n)).slice(0, 10);
 
-  // blocos por seção: 1 grande + até 3 em lista, cada um na cor da seção
   const blocos = SECOES.map((s) => {
-    const ns = (s.fora ? lista : depois)
-      .filter((n) => secaoDe(n) === s)
-      .slice(0, 4);
-    if (!ns.length) return "";
-    const [p, ...r] = ns;
-    return `<section class="bloco" style="--cor:${s.cor}">
-      <div class="bloco-t"><h2>${s.nome}</h2><a href="./?secao=${s.slug}">Ver tudo →</a></div>
-      <div class="bloco-c">${cardHTML(p)}<div class="lista-v">${r.map(itemHTML).join("")}</div></div></section>`;
+    const ns = lista.filter((n) => secaoDe(n) === s && !usadas.has(n));
+    const todas = lista.filter((n) => secaoDe(n) === s);
+    const usar = (ns.length >= 3 ? ns : todas).slice(0, 5);
+    if (!usar.length) return "";
+    const ord = [...usar.filter(temFoto), ...usar.filter((n) => !temFoto(n))];
+    const [p, ...r] = ord;
+    return `<section class="bloco2${s.slug === "mundo" ? " escuro" : ""}" style="--cor:${s.cor}">
+      <a class="b2-capa rv" href="./?secao=${s.slug}"><span class="b2-arte" style="background-image:url(midia/capas/${s.slug}.jpg)"></span><span class="wrap"><b>${s.nome}</b><small>${esc(s.desc)}</small><i>Mais de ${s.nome} →</i></span></a>
+      <div class="wrap">
+      <div class="b2-c">${sobreHTML(p, "b2-grande", 900)}<div class="b2-grade">${r.map((n) => fotoCardHTML(n)).join("")}</div></div></div></section>`;
   }).join("");
 
   $("#conteudo").innerHTML = `
-    <div class="capa">
-      <div>
-        ${destaqueHTML(d)}
-        ${zapFaixa()}
-        ${dupla.length ? `<div class="dupla">${dupla.map(cardHTML).join("")}</div>` : ""}
-        ${ultimas.length ? `<h2 class="secao">Últimas notícias</h2><div class="lista-v">${ultimas.map(itemHTML).join("")}</div>` : ""}
+    <section class="palco"><div class="wrap">
+      <div class="palco-cab"><span class="ao-vivo">Destaques de agora</span><span>${esc(new Date().toLocaleDateString("pt-BR", { day: "numeric", month: "long", timeZone: "America/Sao_Paulo" }))}</span></div>
+      <div class="hero">
+        ${sobreHTML(princ, "principal", 1280)}
+        <div class="hero-lado">${lado.map((n) => sobreHTML(n, "lateral-c", 640)).join("")}</div>
       </div>
+      ${quatro.length ? `<div class="quatro">${quatro.map((n) => fotoCardHTML(n)).join("")}</div>` : ""}
+    </div></section>
+    ${zapFaixa()}
+    <div class="capa">
+      <div><h2 class="secao">Últimas notícias</h2><div class="feed">${ultimas.map(linhaHTML).join("")}</div></div>
       <aside class="lateral">${tempoBox()}${agendaBox(lista)}${telefonesBox()}</aside>
     </div>
-    ${sigaHTML()}
-    ${blocos}`;
+    ${blocos}
+    ${sigaHTML()}`;
   carregarTempo();
   mostrarInstalar();
   mostrarAvisos();
+  efeitos3D();
+}
+
+// ---------- efeitos 3D: cartões que inclinam com o mouse, capas com profundidade e entrada suave ----------
+const semMovimento = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+function efeitos3D() {
+  if (semMovimento()) {
+    document.querySelectorAll(".rv").forEach((e) => e.classList.add("visivel"));
+    return;
+  }
+  const alvos = ".sobre-card, .foto-card, .card, .b2-capa";
+  document.querySelectorAll(".sobre-card, .foto-card, .card, .linha, .b2-capa").forEach((e) => e.classList.add("rv"));
+  const io = new IntersectionObserver(
+    (es) => es.forEach((e) => e.isIntersecting && (e.target.classList.add("visivel"), io.unobserve(e.target))),
+    { rootMargin: "0px 0px -8% 0px" },
+  );
+  document.querySelectorAll(".rv").forEach((e) => io.observe(e));
+  if (matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    document.addEventListener("pointermove", (ev) => {
+      const c = ev.target.closest && ev.target.closest(alvos);
+      document.querySelectorAll(".inclina").forEach((x) => x !== c && (x.classList.remove("inclina"), x.style.removeProperty("--rx"), x.style.removeProperty("--ry")));
+      if (!c) return;
+      const r = c.getBoundingClientRect();
+      const x = (ev.clientX - r.left) / r.width - 0.5;
+      const y = (ev.clientY - r.top) / r.height - 0.5;
+      const forca = c.classList.contains("b2-capa") ? 3 : 7;
+      c.classList.add("inclina");
+      c.style.setProperty("--rx", (-y * forca).toFixed(2) + "deg");
+      c.style.setProperty("--ry", (x * forca).toFixed(2) + "deg");
+      c.style.setProperty("--mx", ((x + 0.5) * 100).toFixed(1) + "%");
+      c.style.setProperty("--my", ((y + 0.5) * 100).toFixed(1) + "%");
+    }, { passive: true });
+  }
+  // profundidade das capas das editorias ao rolar a página
+  const capas = [...document.querySelectorAll(".b2-arte, .cab-arte")];
+  if (!capas.length) return;
+  let pedido = 0;
+  const mover = () => {
+    pedido = 0;
+    const h = innerHeight;
+    capas.forEach((a) => {
+      const r = a.parentNode.getBoundingClientRect();
+      if (r.bottom < 0 || r.top > h) return;
+      const p = (r.top + r.height / 2 - h / 2) / h;
+      a.style.transform = `translate3d(0, ${(p * 40).toFixed(1)}px, 0) scale(1.12)`;
+    });
+  };
+  addEventListener("scroll", () => pedido || (pedido = requestAnimationFrame(mover)), { passive: true });
+  mover();
 }
 
 function paginaSecao(lista, s) {
   document.title = `${s.nome} | Brasil Agora Informa`;
   const ns = lista.filter((n) => secaoDe(n) === s);
   $("#conteudo").innerHTML = `
-    <header class="cab-secao" style="--cor:${s.cor}"><h1>${s.nome}</h1><p>${s.desc}</p></header>
+    <header class="cab-secao com-arte" style="--cor:${s.cor}"><span class="cab-arte" style="background-image:url(midia/capas/${s.slug}.jpg)"></span><div><h1>${s.nome}</h1><p>${s.desc}</p></div></header>
     ${
       ns.length
         ? `<div class="grade">${ns.slice(0, 60).map(cardHTML).join("")}</div>`
         : `<p class="vazio">As primeiras notícias de ${s.nome.toLowerCase()} chegam em breve. Enquanto isso, veja as <a href="./">últimas notícias</a>.</p>`
     }
     ${sigaHTML()}`;
+  efeitos3D();
 }
 
 async function agenda() {
@@ -439,7 +550,7 @@ async function materia() {
       : null;
   const midia =
     fm && fotoSrc(fm.url)
-      ? `<figure class="foto-mat"><img src="${fotoSrc(fm.url)}" alt="" ${reserva(n)} width="1200" height="675">${fm.credito ? `<figcaption>Foto: ${esc(fm.credito)}</figcaption>` : ""}</figure>`
+      ? `<figure class="foto-mat"><img src="${fotoSrc(fm.url)}" alt="" ${reserva(n)} width="1200" height="675">${fm.credito ? `<figcaption>${fm.credito === ARTE ? "" : "Foto: "}${esc(fm.credito)}</figcaption>` : ""}</figure>`
       : n.imagem
         ? `<img class="card-mat" src="${esc(n.imagem)}" alt="Card da notícia: ${esc(n.titulo)}" width="1080" height="1350">`
         : "";
@@ -1006,7 +1117,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "11";
+const VERSAO_SITE = "13";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {

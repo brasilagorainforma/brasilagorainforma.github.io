@@ -713,3 +713,184 @@ h2.secao::before {
 .ja-instalou{background:#fff8e0;border:1px solid #f3dc8a;border-radius:10px;padding:12px;margin:10px 0;font-size:15px;line-height:1.5;text-align:left}
 .ja-instalou img{vertical-align:middle;border-radius:6px}
 .topo{padding-top:env(safe-area-inset-top,0)}
+
+/* ===== capa de portal (v2, 27/11/2026) ===== */
+body{background:#eef1f6}
+.topo .wrap{padding-top:14px;padding-bottom:14px}
+.selo{width:58px;height:58px}
+.nome{font-size:clamp(22px,3vw,30px)}
+.plantao{background:#fff;border-bottom:1px solid var(--linha)}
+.plantao .wrap{display:flex;align-items:center;gap:12px;height:40px;overflow:hidden}
+.p-rot{flex:none;background:#b3122e;color:#fff;font:900 12px Archivo,sans-serif;letter-spacing:1px;text-transform:uppercase;padding:4px 10px;border-radius:3px;position:relative;padding-left:20px}
+.p-rot::before{content:"";position:absolute;left:8px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:#fff;animation:pisca 1.2s infinite}
+@keyframes pisca{50%{opacity:.2}}
+.p-trilho{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.p-faixa{display:flex;gap:36px;width:max-content;animation:corre 90s linear infinite}
+.p-trilho:hover .p-faixa{animation-play-state:paused}
+.p-faixa a{white-space:nowrap;text-decoration:none;font-size:14px;font-weight:600;color:var(--tinta)}
+.p-faixa a b{font:900 12px Archivo,sans-serif;text-transform:uppercase;margin-right:6px}
+@keyframes corre{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.p-faixa{animation:none}}
+
+.hero{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:14px;margin:22px 0 14px}
+.hero-lado{display:grid;grid-template-rows:1fr 1fr;gap:14px}
+.sobre-card{position:relative;display:block;overflow:hidden;background:linear-gradient(150deg,var(--cor),color-mix(in srgb,var(--cor) 55%,#000));color:#fff;text-decoration:none;min-height:200px;border-radius:6px}
+.sobre-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.sobre-card:hover img{transform:scale(1.04)}
+.sobre-txt{position:absolute;left:0;right:0;bottom:0;padding:70px 20px 18px;background:linear-gradient(transparent,rgba(4,10,24,.55) 35%,rgba(4,10,24,.92))}
+.sobre-card h2{font:900 21px/1.15 Archivo,sans-serif;margin:8px 0 6px;text-wrap:balance}
+.sobre-card p{color:#dfe6f1;font-size:15px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:6px}
+.sobre-card .meta{color:#c3cede;font-size:12px}
+.sobre-card .meta .fonte{color:#c3cede}
+.sobre-card.principal{aspect-ratio:16/10;min-height:340px}
+.sobre-card.principal h2{font-size:clamp(26px,3.4vw,40px);line-height:1.08}
+.sobre-card.principal .sobre-txt{padding:120px 28px 24px}
+.sobre-card .tag{border-radius:2px}
+
+.quatro{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:22px}
+.foto-card{background:#fff;display:flex;flex-direction:column;text-decoration:none;border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgba(10,30,60,.08)}
+.foto-card .thumb{border-radius:0}
+.foto-card img{transition:transform .4s}
+.foto-card:hover img{transform:scale(1.05)}
+.fc-corpo{padding:12px 14px 14px;display:flex;flex-direction:column;gap:7px;border-top:4px solid var(--cor)}
+.fc-corpo .tag{align-self:flex-start}
+.foto-card h3{font:800 17px/1.22 Archivo,sans-serif}
+.foto-card:hover h3{color:var(--cor)}
+.foto-card p{font-size:14px;color:var(--cinza);line-height:1.45}
+.foto-card .meta{font-size:12px}
+
+.feed{display:flex;flex-direction:column;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 2px rgba(10,30,60,.08)}
+.linha{display:grid;grid-template-columns:52px 150px minmax(0,1fr);gap:14px;align-items:start;padding:14px;border-bottom:1px solid var(--linha);text-decoration:none}
+.linha:last-child{border-bottom:0}
+.l-hora{font:900 14px Archivo,sans-serif;color:var(--cor);padding-top:2px}
+.linha .thumb{border-radius:4px}
+.linha h3{font:800 18px/1.25 Archivo,sans-serif;margin-top:6px}
+.linha:hover h3{color:var(--cor)}
+.capa{margin-top:8px}
+
+.bloco2{width:100vw;margin-left:calc(50% - 50vw);padding:30px 0 34px;background:#fff;border-top:6px solid var(--cor)}
+.bloco2:nth-of-type(even){background:#f7f9fc}
+.b2-t{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.b2-t h2{font:900 30px Archivo,sans-serif;text-transform:uppercase;letter-spacing:.5px}
+.b2-t h2 a{text-decoration:none;color:var(--cor)}
+.b2-t span{color:var(--cinza);font-size:14px;flex:1;min-width:200px}
+.b2-mais{font-weight:800;font-size:14px;color:var(--cor);text-decoration:none;white-space:nowrap}
+.b2-c{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:16px}
+.b2-grande{min-height:420px}
+.b2-grande h2{font-size:clamp(22px,2.6vw,30px)}
+.b2-grade{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.b2-grade .foto-card h3{font-size:16px}
+.bloco2.escuro{background:linear-gradient(160deg,#120a24,#2a1650);border-top-color:#9c6ade}
+.bloco2.escuro .b2-t h2 a{color:#fff}
+.bloco2.escuro .b2-t span{color:#cbbfe6}
+.bloco2.escuro .b2-mais{color:#e0ccff}
+.bloco2.escuro .foto-card{background:rgba(255,255,255,.06);box-shadow:none}
+.bloco2.escuro .foto-card h3{color:#fff}
+.bloco2.escuro .foto-card .meta,.bloco2.escuro .foto-card .fonte{color:#b9acd6}
+.bloco2.escuro .fc-corpo{border-top-color:#9c6ade}
+.siga{margin-top:32px}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .hero-lado{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .hero-lado .sobre-card{aspect-ratio:4/3;min-height:0}
+  .quatro{grid-template-columns:1fr 1fr}
+  .b2-c{grid-template-columns:1fr}
+  .b2-grande{min-height:0;aspect-ratio:16/11}
+}
+@media (max-width:560px){
+  .hero{margin-top:12px;gap:10px}
+  .sobre-card.principal{aspect-ratio:4/5;min-height:0}
+  .sobre-card.principal .sobre-txt{padding:90px 16px 16px}
+  .hero-lado{grid-template-columns:1fr;gap:10px}
+  .hero-lado .sobre-card{aspect-ratio:16/10}
+  .sobre-card h2{font-size:19px}
+  .quatro{gap:10px}
+  .quatro .foto-card h3{font-size:15px}
+  .quatro .fc-corpo{padding:10px}
+  .linha{grid-template-columns:96px minmax(0,1fr);gap:10px;padding:12px}
+  .l-hora{display:none}
+  .linha h3{font-size:16px;margin-top:4px}
+  .b2-t h2{font-size:24px}
+  .b2-grade{gap:10px}
+  .b2-grade .foto-card h3{font-size:15px}
+  .bloco2{padding:22px 0 26px}
+}
+
+/* ===== visual internacional com efeitos 3D (v3, 27/11/2026) ===== */
+.topo{background:radial-gradient(120% 160% at 85% -20%,#1d4f9e 0%,rgba(29,79,158,0) 55%),linear-gradient(160deg,#0b2a5b 0%,#050f24 100%)}
+.topo::after{height:4px;background:linear-gradient(90deg,#009c3b 0 33%,#f5b700 33% 66%,#1d4f9e 66%)}
+.topo .selo{filter:drop-shadow(0 6px 14px rgba(0,0,0,.45));transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.topo .marca:hover .selo{transform:perspective(400px) rotateY(18deg) rotateX(-6deg) scale(1.05)}
+.secoes{background:rgba(5,15,36,.92);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.secoes a{color:#dfe7f5}
+.secoes a:hover,.secoes a[aria-current=page]{color:#fff;border-bottom-color:var(--cor,var(--ouro))}
+.secoes a[aria-current=page]{border-bottom-color:var(--ouro)}
+.hoje{background:#050f24;color:#9fb0cc;border-bottom:1px solid rgba(255,255,255,.06)}
+.plantao{background:#050f24}
+
+/* palco escuro dos destaques */
+.palco{width:100vw;margin-left:calc(50% - 50vw);padding:22px 0 30px;color:#fff;
+  background:radial-gradient(90% 70% at 20% 0%,rgba(29,79,158,.55),rgba(5,15,36,0) 60%),radial-gradient(60% 60% at 100% 100%,rgba(0,156,59,.18),rgba(5,15,36,0) 60%),linear-gradient(180deg,#071a3a,#050f24);
+  position:relative;overflow:hidden}
+.palco::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:48px 48px;mask-image:linear-gradient(180deg,#000,transparent 85%);-webkit-mask-image:linear-gradient(180deg,#000,transparent 85%);pointer-events:none}
+.palco .wrap{position:relative}
+.palco-cab{display:flex;justify-content:space-between;align-items:center;font:800 13px Archivo,sans-serif;text-transform:uppercase;letter-spacing:1.2px;color:#9fb0cc;margin-bottom:12px}
+.ao-vivo{display:inline-flex;align-items:center;gap:8px;color:#fff}
+.ao-vivo::before{content:"";width:9px;height:9px;border-radius:50%;background:#e03131;box-shadow:0 0 0 0 rgba(224,49,49,.7);animation:pulsa 1.6s infinite}
+@keyframes pulsa{70%{box-shadow:0 0 0 10px rgba(224,49,49,0)}100%{box-shadow:0 0 0 0 rgba(224,49,49,0)}}
+.palco .hero{margin:0 0 14px;perspective:1400px}
+.palco .quatro{margin:0;perspective:1200px}
+.palco .foto-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);box-shadow:none;backdrop-filter:blur(6px)}
+.palco .foto-card h3{color:#fff}
+.palco .foto-card .meta,.palco .foto-card .fonte{color:#9fb0cc}
+.palco .foto-card:hover h3{color:var(--ouro)}
+
+/* cartões em 3D: inclinam com o mouse e ganham brilho */
+.sobre-card,.foto-card,.card,.b2-capa{transform-style:preserve-3d;transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s;will-change:transform}
+.sobre-card,.foto-card{border-radius:12px}
+.sobre-card.inclina,.foto-card.inclina,.card.inclina{transform:perspective(1000px) rotateX(var(--rx,0)) rotateY(var(--ry,0)) translateZ(6px);box-shadow:0 22px 44px -12px rgba(3,12,30,.55);z-index:2}
+.b2-capa.inclina{transform:perspective(1600px) rotateX(var(--rx,0)) rotateY(var(--ry,0))}
+.sobre-card::after,.foto-card::after,.card::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.22),transparent 45%)}
+.foto-card,.card{position:relative}
+.inclina::after{opacity:1}
+.sobre-card .sobre-txt{transform:translateZ(30px)}
+.sobre-card .sobre-txt{z-index:1}
+.sobre-card.principal{box-shadow:0 30px 60px -20px rgba(0,0,0,.7)}
+.sobre-card.principal .tag{font-size:13px}
+
+/* capas das editorias (artes 3D próprias) */
+.bloco2{padding-top:0;border-top:0}
+.b2-capa{position:relative;display:block;height:210px;overflow:hidden;color:#fff;text-decoration:none;margin-bottom:26px;background:#050f24}
+.b2-arte{position:absolute;inset:-30px 0;background-size:cover;background-position:center 55%;transform:scale(1.12);transition:filter .5s}
+.b2-capa::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(5,15,36,.95) 0%,rgba(5,15,36,.7) 38%,rgba(5,15,36,.05) 75%),linear-gradient(0deg,var(--cor) 0 5px,transparent 5px)}
+.b2-capa .wrap{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;gap:4px}
+.b2-capa b{font:900 clamp(34px,6vw,58px)/1 Archivo,sans-serif;text-transform:uppercase;letter-spacing:.5px;text-shadow:0 6px 24px rgba(0,0,0,.5);transform:translateZ(40px)}
+.b2-capa small{font-size:15px;color:#c9d6ea;max-width:440px;line-height:1.4}
+.b2-capa i{font:800 13px Archivo,sans-serif;font-style:normal;text-transform:uppercase;letter-spacing:1px;color:var(--ouro);margin-top:6px}
+.b2-capa:hover .b2-arte{filter:brightness(1.15) saturate(1.1)}
+.bloco2.escuro .b2-capa{margin-bottom:26px}
+.bloco2 > .wrap{padding-bottom:6px}
+.cab-secao.com-arte{position:relative;overflow:hidden;min-height:220px;display:flex;align-items:flex-end;padding:28px;border-radius:12px;background:#050f24;border-bottom:5px solid var(--cor)}
+.cab-arte{position:absolute;inset:-30px 0;background-size:cover;background-position:center;transform:scale(1.12)}
+.cab-secao.com-arte::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(5,15,36,.92),rgba(5,15,36,.35) 70%,rgba(5,15,36,.1))}
+.cab-secao.com-arte > div{position:relative;z-index:2}
+.cab-secao.com-arte h1{font-size:clamp(34px,6vw,56px);text-transform:uppercase}
+
+/* entrada suave em 3D ao rolar */
+.rv{opacity:0;transform:perspective(900px) translateY(26px) rotateX(8deg)}
+.rv.visivel{opacity:1;transform:none;transition:opacity .7s ease,transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.visivel.inclina{transform:perspective(1000px) rotateX(var(--rx,0)) rotateY(var(--ry,0)) translateZ(6px);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+.b2-capa.rv.visivel.inclina{transform:perspective(1600px) rotateX(var(--rx,0)) rotateY(var(--ry,0))}
+
+@media (max-width:560px){
+  .palco{padding:14px 0 20px}
+  .b2-capa{height:150px;margin-bottom:18px}
+  .b2-capa small{display:none}
+  .b2-capa::before{background:linear-gradient(90deg,rgba(5,15,36,.92) 0%,rgba(5,15,36,.55) 60%,rgba(5,15,36,.15)),linear-gradient(0deg,var(--cor) 0 4px,transparent 4px)}
+  .cab-secao.com-arte{min-height:170px;padding:20px}
+}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none}
+  .ao-vivo::before{animation:none}
+}
