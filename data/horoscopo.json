@@ -1,0 +1,78 @@
+{
+  "data": "2026-11-27",
+  "aviso": "Entretenimento. Texto próprio do Brasil Agora Informa.",
+  "signos": [
+    {
+      "nome": "Áries",
+      "simbolo": "♈",
+      "periodo": "21/3 a 19/4",
+      "texto": "Dia bom para resolver pendências que você vem adiando. Energia alta, mas escolha bem as brigas: nem toda discussão vale o seu tempo. À noite, um convite pode animar o fim de semana."
+    },
+    {
+      "nome": "Touro",
+      "simbolo": "♉",
+      "periodo": "20/4 a 20/5",
+      "texto": "Atenção às compras por impulso na Black Friday: compare preços antes de fechar. No trabalho, a paciência rende frutos. Bom momento para cuidar do corpo e descansar melhor."
+    },
+    {
+      "nome": "Gêmeos",
+      "simbolo": "♊",
+      "periodo": "21/5 a 20/6",
+      "texto": "Conversas fluem e abrem portas. Aproveite para mandar aquela mensagem ou propor uma ideia nova. Só cuidado para não prometer mais do que dá para cumprir."
+    },
+    {
+      "nome": "Câncer",
+      "simbolo": "♋",
+      "periodo": "21/6 a 22/7",
+      "texto": "A família e a casa pedem atenção hoje. Um gesto de carinho resolve mais do que muitas palavras. Nas finanças, organize as contas de fim de ano com calma."
+    },
+    {
+      "nome": "Leão",
+      "simbolo": "♌",
+      "periodo": "23/7 a 22/8",
+      "texto": "Seu brilho chama atenção, use isso a favor de um projeto importante. Reconhecimento pode chegar de onde você não espera. Evite gastar para impressionar."
+    },
+    {
+      "nome": "Virgem",
+      "simbolo": "♍",
+      "periodo": "23/8 a 22/9",
+      "texto": "Dia produtivo para organizar, planejar e colocar a vida em ordem. Uma lista de tarefas ajuda a aliviar a cabeça. Reserve um tempo também para não fazer nada."
+    },
+    {
+      "nome": "Libra",
+      "simbolo": "♎",
+      "periodo": "23/9 a 22/10",
+      "texto": "Equilíbrio é a palavra do dia: entre trabalho e lazer, entre dar e receber. Uma decisão adiada pode ser tomada agora, com mais clareza. Bom para encontros."
+    },
+    {
+      "nome": "Escorpião",
+      "simbolo": "♏",
+      "periodo": "23/10 a 21/11",
+      "texto": "Intuição afiada. Confie no que sente, mas confirme os fatos antes de agir. Um assunto antigo pode voltar, desta vez com solução à vista."
+    },
+    {
+      "nome": "Sagitário",
+      "simbolo": "♐",
+      "periodo": "22/11 a 21/12",
+      "texto": "Começo de ciclo no seu mês: momento de planejar viagens, estudos e novos desafios. O otimismo contagia quem está por perto. Só não esqueça os compromissos já assumidos."
+    },
+    {
+      "nome": "Capricórnio",
+      "simbolo": "♑",
+      "periodo": "22/12 a 19/1",
+      "texto": "Foco nas metas e no dinheiro. Uma conversa séria no trabalho pode trazer boas notícias. À noite, desacelere: nem tudo precisa ser resolvido hoje."
+    },
+    {
+      "nome": "Aquário",
+      "simbolo": "♒",
+      "periodo": "20/1 a 18/2",
+      "texto": "Ideias diferentes ganham espaço. Amigos e grupos trazem oportunidades. Bom dia para tecnologia, cursos e para ajudar alguém sem esperar nada em troca."
+    },
+    {
+      "nome": "Peixes",
+      "simbolo": "♓",
+      "periodo": "19/2 a 20/3",
+      "texto": "Sensibilidade em alta. Arte, música e momentos de calma fazem bem. Cuidado com quem pede favores demais; dizer não também é cuidar de si."
+    }
+  ]
+}

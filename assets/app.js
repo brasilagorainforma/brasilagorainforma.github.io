@@ -174,7 +174,7 @@ function montarTopo(ativa) {
     ${SECOES.map((s) => link(`./?secao=${s.slug}`, s.nome, s.slug, s.cor)).join("")}
     ${link("agenda.html", "Agenda", "agenda", "#d9480f")}
   </div></nav>
-  <div class="hoje"><div class="wrap"><span>${hoje}</span><span><b>Notícia confirmada</b>, sempre com a fonte · <a href="sobre.html">Quem somos</a></span></div></div>`;
+  <div class="hoje"><div class="wrap"><span>${hoje}</span><span class="cot-topo" id="cot-topo"></span><span><b>Notícia confirmada</b>, sempre com a fonte · <a href="sobre.html">Quem somos</a></span></div></div>`;
   $("#rodape").innerHTML = `
   <footer class="rodape"><div class="wrap">
     <div><b style="color:#fff">Brasil Agora Informa</b> · As notícias do Brasil e do mundo, agora<br>
@@ -182,7 +182,102 @@ function montarTopo(ativa) {
     <nav class="mapa">${SECOES.map((s) => `<a href="./?secao=${s.slug}">${s.nome}</a>`).join("")}<a href="agenda.html">Agenda</a><a href="sobre.html">Quem somos</a>${REDES.whatsapp ? `<a href="${REDES.whatsapp}" target="_blank" rel="noopener">💬 Avisos no WhatsApp</a>` : ""}</nav>
     <nav class="redes">${redesHTML()}</nav>
   </div></footer>`;
+  carregarCotTopo();
 }
+
+// ---------- dólar e euro sempre à vista, no topo de todas as páginas ----------
+async function carregarCotTopo() {
+  const el = $("#cot-topo");
+  if (!el) return;
+  try {
+    const d = await (await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL")).json();
+    el.innerHTML = [["USDBRL", "Dólar"], ["EURBRL", "Euro"]]
+      .filter(([k]) => d[k])
+      .map(([k, nome]) => {
+        const v = Number(d[k].pctChange);
+        return `<span class="ct"><b>${nome}</b> R$ ${Number(d[k].bid).toFixed(2).replace(".", ",")} <em class="${v >= 0 ? "sobe" : "cai"}">${v >= 0 ? "▲" : "▼"}${Math.abs(v).toFixed(2).replace(".", ",")}%</em></span>`;
+      })
+      .join("");
+  } catch {
+    el.remove();
+  }
+}
+
+// ---------- FUTEBOL: tabela do Brasileirão, resultados e próximos jogos (dados públicos da ESPN, atualizam sozinhos) ----------
+const ESPN = "https://site.api.espn.com/apis";
+const futebolHTML = () =>
+  `<section class="futebol wrap" id="futebol" hidden><div class="fut-cab"><h2 class="secao">Brasileirão</h2><a href="./?secao=esporte">Notícias de futebol →</a></div><div class="fut-grade"><div class="fut-tabela"></div><div class="fut-jogos"></div></div><p class="credito">Atualiza sozinho · Dados: ESPN</p></section>`;
+const ymd = (d) => d.toISOString().slice(0, 10).replace(/-/g, "");
+const horaBR = (iso) =>
+  new Date(iso).toLocaleString("pt-BR", { weekday: "short", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit", timeZone: "America/Sao_Paulo" }).replace(",", "");
+async function carregarFutebol() {
+  const el = $("#futebol");
+  if (!el) return;
+  try {
+    const agora = new Date();
+    const ini = new Date(agora - 7 * 864e5), fim = new Date(+agora + 10 * 864e5);
+    const [tab, jogos] = await Promise.all([
+      fetch(`${ESPN}/v2/sports/soccer/bra.1/standings`).then((r) => r.json()),
+      fetch(`${ESPN}/site/v2/sports/soccer/bra.1/scoreboard?dates=${ymd(ini)}-${ymd(fim)}&limit=200`).then((r) => r.json()),
+    ]);
+    const ent = tab.children?.[0]?.standings?.entries || [];
+    const st = (e, k) => (e.stats.find((s) => s.name === k) || {}).displayValue || "";
+    ent.sort((a, b) => Number(st(a, "rank")) - Number(st(b, "rank")));
+    el.querySelector(".fut-tabela").innerHTML = ent.length
+      ? `<table><thead><tr><th>#</th><th>Time</th><th>P</th><th>J</th><th>V</th><th>SG</th></tr></thead><tbody>${ent
+          .map((e) => {
+            const r = Number(st(e, "rank"));
+            return `<tr class="${r <= 6 ? "g6" : r >= ent.length - 3 ? "z4" : ""}"><td>${r}</td><td>${esc(e.team.shortDisplayName || e.team.displayName)}</td><td><b>${st(e, "points")}</b></td><td>${st(e, "gamesPlayed")}</td><td>${st(e, "wins")}</td><td>${st(e, "pointDifferential")}</td></tr>`;
+          })
+          .join("")}</tbody></table><p class="legenda"><i class="g6"></i> Libertadores <i class="z4"></i> Rebaixamento</p>`
+      : "";
+    const evs = jogos.events || [];
+    const linha = (e) => {
+      const c = e.competitions[0], casa = c.competitors.find((x) => x.homeAway === "home"), fora = c.competitors.find((x) => x.homeAway === "away");
+      const est = e.status.type.state;
+      const placar = est === "pre" ? "x" : `${casa.score} x ${fora.score}`;
+      return `<li class="${est}"><small>${est === "in" ? '<b class="vivo">AO VIVO</b>' : horaBR(e.date)}</small><span>${esc(casa.team.shortDisplayName)}</span><b>${placar}</b><span>${esc(fora.team.shortDisplayName)}</span></li>`;
+    };
+    const feitos = evs.filter((e) => e.status.type.state !== "pre").sort((a, b) => b.date.localeCompare(a.date)).slice(0, 8);
+    const prox = evs.filter((e) => e.status.type.state === "pre").sort((a, b) => a.date.localeCompare(b.date)).slice(0, 8);
+    el.querySelector(".fut-jogos").innerHTML =
+      (prox.length ? `<h3>Próximos jogos</h3><ul>${prox.map(linha).join("")}</ul>` : "") +
+      (feitos.length ? `<h3>Resultados</h3><ul>${feitos.map(linha).join("")}</ul>` : "");
+    if (ent.length || evs.length) el.hidden = false;
+  } catch {
+    el.remove();
+  }
+}
+
+// ---------- horóscopo do dia (texto próprio, entretenimento; a rotina atualiza data/horoscopo.json todo dia) ----------
+const horoscopoBox = () => `<section class="box horoscopo" id="horoscopo" hidden><h2 class="box-t">Horóscopo do dia</h2><div class="signos"></div><div class="h-txt"></div><p class="credito">Entretenimento · Brasil Agora Informa</p></section>`;
+async function carregarHoroscopo() {
+  const el = $("#horoscopo");
+  if (!el) return;
+  try {
+    const d = await (await fetch("data/horoscopo.json?v=" + Date.now().toString().slice(0, -5))).json();
+    const ss = d.signos || [];
+    if (!ss.length) return el.remove();
+    let atual = 0;
+    try { atual = Math.max(0, ss.findIndex((s) => s.nome === localStorage.getItem("bai-signo"))); } catch {}
+    const mostra = (i) => {
+      const s = ss[i];
+      el.querySelector(".h-txt").innerHTML = `<b>${s.simbolo} ${esc(s.nome)}</b> <small>${esc(s.periodo)}</small><p>${esc(s.texto)}</p>`;
+      el.querySelectorAll(".signos button").forEach((b, j) => b.setAttribute("aria-pressed", j === i));
+      try { localStorage.setItem("bai-signo", s.nome); } catch {}
+    };
+    el.querySelector(".signos").innerHTML = ss.map((s, i) => `<button type="button" title="${esc(s.nome)}" data-i="${i}">${s.simbolo}</button>`).join("");
+    el.querySelector(".signos").addEventListener("click", (ev) => { const b = ev.target.closest("button"); if (b) mostra(Number(b.dataset.i)); });
+    mostra(atual);
+    el.hidden = false;
+  } catch {
+    el.remove();
+  }
+}
+
+// ---------- espaços de anúncio da casa: "Anuncie aqui" (sem números inventados; contato pelo Instagram do jornal) ----------
+const anuncioHTML = (tipo = "faixa") =>
+  `<aside class="anuncio anuncio-${tipo}${tipo === "faixa" ? " wrap" : ""}" aria-label="Publicidade"><small>Publicidade</small><div><b>Anuncie aqui</b><span>Sua marca no Brasil Agora Informa, ao lado das notícias do Brasil e do mundo.</span></div><a href="${REDES.instagram}" target="_blank" rel="noopener">Fale com a gente</a></aside>`;
 
 async function carregar() {
   const r = await fetch(
@@ -526,7 +621,10 @@ async function capa() {
       <a class="b2-capa rv" href="./?secao=${s.slug}"><span class="b2-arte" style="background-image:url(midia/capas/${s.slug}.jpg)"></span><span class="wrap"><b>${s.nome}</b><small>${esc(s.desc)}</small><i>Mais de ${s.nome} →</i></span></a>
       <div class="wrap">
       <div class="b2-c">${sobreHTML(p, "b2-grande", 900)}<div class="b2-grade">${r.map((n) => (temFoto(n) ? fotoCardHTML(n) : textoCardHTML(n))).join("")}</div></div></div></section>`;
-  }).join("");
+  })
+    .filter(Boolean)
+    .map((b, i) => (i % 3 === 2 ? b + anuncioHTML("faixa") : b))
+    .join("");
 
   $("#conteudo").innerHTML = `
     <section class="palco"><div class="wrap">
@@ -540,17 +638,21 @@ async function capa() {
       ${redeBox()}
     </div></section>
     ${compactas.length ? `<section class="wrap compactas"><h2 class="secao">Mais notícias agora</h2><div class="cmp-grade">${compactas.map((n) => `<a class="cmp" href="${linkMateria(n)}"><img src="${fotoSrc(n.foto, 330)}" alt="" loading="lazy" ${reserva(n)}><span><em style="--cor:${corDe(n)}">${esc(n.editoria)}</em><b>${esc(n.titulo)}</b></span></a>`).join("")}</div></section>` : ""}
+    ${anuncioHTML("faixa")}
     ${zapFaixa()}
     <div class="capa">
       <div><h2 class="secao">Últimas notícias</h2><div class="feed">${ultimas.map(linhaHTML).join("")}</div></div>
-      <aside class="lateral">${leia.length ? `<section class="box leia"><h2 class="box-t">Leia também</h2>${leia.map((n) => `<a class="leia-i" href="${linkMateria(n)}"><span><small style="color:${corDe(n)}">${esc(secaoDe(n).nome)}</small><b>${esc(n.titulo)}</b></span><img src="${fotoSrc(n.foto, 330)}" alt="" loading="lazy" ${reserva(n)}></a>`).join("")}</section>` : ""}${mercadoBox()}${tempoBox()}${capitaisBox()}${agendaBox(lista)}${telefonesBox()}</aside>
+      <aside class="lateral">${leia.length ? `<section class="box leia"><h2 class="box-t">Leia também</h2>${leia.map((n) => `<a class="leia-i" href="${linkMateria(n)}"><span><small style="color:${corDe(n)}">${esc(secaoDe(n).nome)}</small><b>${esc(n.titulo)}</b></span><img src="${fotoSrc(n.foto, 330)}" alt="" loading="lazy" ${reserva(n)}></a>`).join("")}</section>` : ""}${mercadoBox()}${anuncioHTML("caixa")}${horoscopoBox()}${tempoBox()}${capitaisBox()}${agendaBox(lista)}${telefonesBox()}</aside>
     </div>
+    ${futebolHTML()}
     ${blocos}
     ${sigaHTML()}`;
   carregarTempo();
   carregarMercado();
   carregarCapitais();
   carregarRede();
+  carregarFutebol();
+  carregarHoroscopo();
   mostrarInstalar();
   mostrarAvisos();
   efeitos3D();
@@ -609,12 +711,15 @@ function paginaSecao(lista, s) {
   const ns = lista.filter((n) => secaoDe(n) === s);
   $("#conteudo").innerHTML = `
     <header class="cab-secao com-arte" style="--cor:${s.cor}"><span class="cab-arte" style="background-image:url(midia/capas/${s.slug}.jpg)"></span><div><h1>${s.nome}</h1><p>${s.desc}</p></div></header>
+    ${s.slug === "esporte" ? futebolHTML() : ""}
     ${
       ns.length
         ? `<div class="grade">${ns.slice(0, 60).map(cardHTML).join("")}</div>`
         : `<p class="vazio">As primeiras notícias de ${s.nome.toLowerCase()} chegam em breve. Enquanto isso, veja as <a href="./">últimas notícias</a>.</p>`
     }
+    ${anuncioHTML("faixa")}
     ${sigaHTML()}`;
+  if (s.slug === "esporte") carregarFutebol();
   efeitos3D();
 }
 
@@ -1229,7 +1334,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "24";
+const VERSAO_SITE = "25";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
