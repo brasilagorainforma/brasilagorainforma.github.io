@@ -32,12 +32,12 @@ jobs:
       - if: github.event_name == 'push'
         run: python3 scripts/avisar_novas.py
         env:
-          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID }}
+          ONESIGNAL_APP_ID: ba2568ab-a7c3-48db-9341-11a3a7af17b4
           ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
       - if: github.event_name == 'workflow_dispatch'
         run: python3 scripts/notificar.py --titulo "$TITULO" --texto "$TEXTO"
         env:
           TITULO: ${{ inputs.titulo }}
           TEXTO: ${{ inputs.texto }}
-          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID }}
+          ONESIGNAL_APP_ID: ba2568ab-a7c3-48db-9341-11a3a7af17b4
           ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}

@@ -713,7 +713,7 @@ setTimeout(() => {
 // Android/computador: um toque em "Ativar avisos" e pronto.
 // iPhone: a Apple só deixa receber avisos com o app instalado na Tela de Início (iOS 16.4+),
 // então fora do app explicamos isso e abrimos o passo a passo de instalação.
-const ONESIGNAL_APP_ID = "";
+const ONESIGNAL_APP_ID = "ba2568ab-a7c3-48db-9341-11a3a7af17b4";
 const temPush = () =>
   "Notification" in window &&
   "serviceWorker" in navigator &&
