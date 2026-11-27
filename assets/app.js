@@ -1077,6 +1077,10 @@ function carregarOneSignal() {
       try {
         await OS.init({
           appId: ONESIGNAL_APP_ID,
+          // o app no painel do OneSignal está como "Typical": sem esta linha o SDK ignora o nosso sw.js
+          // e procura /OneSignalSDKWorker.js (que não existe), e a inscrição nunca conclui no iPhone
+          serviceWorkerOverrideForTypical: true,
+          path: "/",
           serviceWorkerPath: "sw.js",
           serviceWorkerParam: { scope: "/" },
           notifyButton: { enable: false },
@@ -1344,7 +1348,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "31";
+const VERSAO_SITE = "32";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
