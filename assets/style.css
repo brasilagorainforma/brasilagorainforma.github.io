@@ -902,3 +902,29 @@ html,body{overflow-x:clip}
 .bloco2.escuro .foto-card.so-texto p{color:#cbbfe6}
 .caixa-brasil{margin:18px 0;padding:16px 18px;border-radius:10px;background:linear-gradient(135deg,#e9f7ee,#fff8dc);border-left:5px solid #009c3b;font-size:16px;line-height:1.5}
 .caixa-brasil b{display:block;font:800 13px Archivo,sans-serif;text-transform:uppercase;letter-spacing:.8px;color:#0b2a5b;margin-bottom:4px}
+
+/* ===== tema escuro em todo o site (v4, 27/11/2026: "a cara clara parece antiga") ===== */
+:root{--tinta:#e8eef9;--cinza:#9fb0cc;--linha:rgba(255,255,255,.09);--fundo:#050f24;--painel:#0c1d3d;--painel2:#0a1832}
+html{background:#050f24;color-scheme:dark}
+body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),transparent 60%),#050f24;color:var(--tinta)}
+.box,.feed,.card,.item,.foto-card,.materia,.siga,.caixa-fonte,.agenda-full .evento,.evento{background:var(--painel);border-color:var(--linha);color:var(--tinta)}
+.feed{box-shadow:0 0 0 1px var(--linha)}
+.linha{border-bottom-color:var(--linha)}
+.linha:hover,.item:hover,.card:hover{background:#10264d}
+.foto-card,.card{box-shadow:0 0 0 1px var(--linha)}
+.foto-card h3,.card h3,.item h3,.linha h3,.box-t,.materia h1,h2.secao,.siga h2{color:#fff}
+.foto-card p,.card p,.meta,.meta .fonte,.materia .texto p,.linha-fina{color:var(--cinza)}
+.materia .texto p,.materia .linha-fina{color:#d5deee}
+.bloco2,.bloco2:nth-of-type(even){background:transparent}
+.bloco2:nth-of-type(even){background:rgba(255,255,255,.025)}
+.bloco2.escuro{background:linear-gradient(160deg,#120a24,#2a1650)}
+.zap-faixa{background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.35);color:#fff}
+.zap-faixa small{color:#a9dcbc}
+.zap-faixa:hover{background:rgba(37,211,102,.16)}
+.caixa-evento{background:#10264d;color:var(--tinta)}
+.caixa-brasil{background:linear-gradient(135deg,rgba(0,156,59,.18),rgba(245,183,0,.12));color:#fff}
+.caixa-brasil b{color:var(--ouro)}
+.rodape{background:#030a19;border-top:1px solid var(--linha)}
+.voltar,.vazio,a.voltar{color:var(--cinza)}
+.box *{border-color:var(--linha)}
+.lateral .box p,.lateral .box li,.lateral .box span{color:#d5deee}
