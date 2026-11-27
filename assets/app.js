@@ -508,7 +508,12 @@ async function capa() {
     compactas.push(n);
     usadas.add(n);
   }
+  // cada cartão dos destaques ganha uma chamada relacionada da mesma seção
+  const subDe = new Map(quatro.map((q) => [q, pega(lista.filter((n) => secaoDe(n) === secaoDe(q)), 1)[0]]));
   const ultimas = lista.filter((n) => !usadas.has(n)).slice(0, 14);
+  ultimas.forEach((n) => usadas.add(n));
+  // "Leia também": notícias que ainda não apareceram no topo, com foto pequena
+  const leia = pega(comFoto, 6);
 
   const blocos = SECOES.map((s) => {
     const ns = lista.filter((n) => secaoDe(n) === s && !usadas.has(n));
@@ -531,14 +536,14 @@ async function capa() {
         <div class="hero-lado">${lado.map((n) => sobreHTML(n, "lateral-c", 640)).join("")}</div>
       </div>
       ${relac.length ? `<ul class="relac">${relac.map((n) => `<li><a href="${linkMateria(n)}"><i style="--cor:${corDe(n)}"></i>${esc(n.titulo)}</a></li>`).join("")}</ul>` : ""}
-      ${quatro.length ? `<div class="quatro">${quatro.map((n) => fotoCardHTML(n)).join("")}</div>` : ""}
+      ${quatro.length ? `<div class="quatro">${quatro.map((n) => `<div class="q-cel">${fotoCardHTML(n)}${subDe.get(n) ? `<a class="q-rel" href="${linkMateria(subDe.get(n))}">${esc(subDe.get(n).titulo)}</a>` : ""}</div>`).join("")}</div>` : ""}
       ${redeBox()}
     </div></section>
     ${compactas.length ? `<section class="wrap compactas"><h2 class="secao">Mais notícias agora</h2><div class="cmp-grade">${compactas.map((n) => `<a class="cmp" href="${linkMateria(n)}"><img src="${fotoSrc(n.foto, 330)}" alt="" loading="lazy" ${reserva(n)}><span><em style="--cor:${corDe(n)}">${esc(n.editoria)}</em><b>${esc(n.titulo)}</b></span></a>`).join("")}</div></section>` : ""}
     ${zapFaixa()}
     <div class="capa">
       <div><h2 class="secao">Últimas notícias</h2><div class="feed">${ultimas.map(linhaHTML).join("")}</div></div>
-      <aside class="lateral">${mercadoBox()}${tempoBox()}${capitaisBox()}${agendaBox(lista)}${telefonesBox()}</aside>
+      <aside class="lateral">${leia.length ? `<section class="box leia"><h2 class="box-t">Leia também</h2>${leia.map((n) => `<a class="leia-i" href="${linkMateria(n)}"><span><small style="color:${corDe(n)}">${esc(secaoDe(n).nome)}</small><b>${esc(n.titulo)}</b></span><img src="${fotoSrc(n.foto, 330)}" alt="" loading="lazy" ${reserva(n)}></a>`).join("")}</section>` : ""}${mercadoBox()}${tempoBox()}${capitaisBox()}${agendaBox(lista)}${telefonesBox()}</aside>
     </div>
     ${blocos}
     ${sigaHTML()}`;
@@ -1224,7 +1229,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "23";
+const VERSAO_SITE = "24";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {

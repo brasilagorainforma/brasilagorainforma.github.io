@@ -972,3 +972,15 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
 @media (max-width:1000px){.cmp-grade{grid-template-columns:1fr 1fr}}
 @media (max-width:640px){.cmp-grade,.relac{grid-template-columns:1fr}}
 .compactas{margin-bottom:24px}
+/* chamada relacionada sob cada cartão e "Leia também" (27/11) */
+.q-cel{display:flex;flex-direction:column;gap:8px;min-width:0}
+.q-cel>.foto-card{flex:1}
+.q-rel{display:flex;gap:8px;color:var(--cinza);text-decoration:none;font-size:13.5px;line-height:1.35;padding:0 4px}
+.q-rel::before{content:"";flex:none;width:7px;height:7px;margin-top:6px;border-radius:2px;background:#F5B700}
+.q-rel:hover{color:var(--tinta)}
+.leia-i{display:flex;gap:10px;justify-content:space-between;align-items:flex-start;padding:10px 0;border-top:1px solid var(--linha);text-decoration:none;color:var(--tinta)}
+.leia-i:first-of-type{border-top:0}
+.leia-i small{display:block;font:800 10px Archivo,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin-bottom:3px;filter:brightness(1.6)}
+.leia-i b{font-size:14px;line-height:1.3;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.leia-i img{width:76px;height:56px;object-fit:cover;border-radius:8px;flex:none}
+.leia-i:hover b{color:#F5B700}
