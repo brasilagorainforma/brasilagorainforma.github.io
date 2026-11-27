@@ -388,6 +388,39 @@ async function carregarCapitais() {
   }
 }
 
+// ---------- Rede Informa: sempre algo dos jornais das cidades da rede (pedido do Usba, 27/11/2026) ----------
+// Para incluir uma cidade nova, basta acrescentar uma linha aqui.
+const REDE = [
+  { nome: "Ribeirão Informa", cidade: "Ribeirão Preto (SP)", site: "https://ribeiraoinforma.github.io/" },
+];
+const SO_NACIONAL = ["ESTADO", "BRASIL", "FUTEBOL-BRASIL", "NACIONAL"];
+const redeBox = () =>
+  `<section class="rede" id="rede" hidden><div class="rede-cab"><b>Rede Informa</b><span>Das nossas cidades</span></div><div class="rede-grade"></div></section>`;
+async function carregarRede() {
+  const el = $("#rede");
+  if (!el) return;
+  const cards = [];
+  for (const r of REDE) {
+    try {
+      const d = await (await fetch(r.site + "data/noticias.json", { cache: "no-cache" })).json();
+      (d.noticias || [])
+        .filter((n) => !SO_NACIONAL.includes(String(n.editoria || "").toUpperCase()))
+        .sort((a, b) => (b.data + (b.hora || "")).localeCompare(a.data + (a.hora || "")))
+        .slice(0, REDE.length > 1 ? 2 : 3)
+        .forEach((n) => cards.push({ r, n }));
+    } catch {}
+  }
+  if (!cards.length) return el.remove();
+  el.querySelector(".rede-grade").innerHTML =
+    cards
+      .map(({ r, n }) => {
+        const f = fotoSrc(n.foto, 330);
+        return `<a class="rede-card" href="${esc(r.site)}noticia.html?id=${encodeURIComponent(n.id)}" target="_blank" rel="noopener">${f ? `<img src="${f}" alt="" loading="lazy" onerror="this.remove()">` : ""}<span><small>${esc(r.cidade)} · ${esc(r.nome)}</small><b>${esc(n.titulo)}</b></span></a>`;
+      })
+      .join("") + REDE.map((r) => `<a class="rede-mais" href="${esc(r.site)}" target="_blank" rel="noopener">Mais no ${esc(r.nome)} →</a>`).join("");
+  el.hidden = false;
+}
+
 const telefonesBox =
   () => `<section class="box"><h2 class="box-t">Telefones úteis</h2><ul class="fones">
     ${TELEFONES.map(([n, s]) => `<li><a href="tel:${n}"><b>${n}</b> ${s}</a></li>`).join("")}</ul></section>`;
@@ -465,7 +498,17 @@ async function capa() {
     quatro.push(n);
     usadas.add(n);
   }
-  const ultimas = lista.filter((n) => !usadas.has(n)).slice(0, 10);
+  // logo abaixo da manchete: mais chamadas em lista, como nos grandes portais
+  const relac = pega(lista.filter((n) => secaoDe(n) === secaoDe(princ)), 2).concat(pega(lista, 2));
+  // faixa densa: muitas notícias por tela, com foto pequena e etiqueta da editoria
+  const compactas = [];
+  for (const n of comFoto) {
+    if (compactas.length === 12) break;
+    if (usadas.has(n)) continue;
+    compactas.push(n);
+    usadas.add(n);
+  }
+  const ultimas = lista.filter((n) => !usadas.has(n)).slice(0, 14);
 
   const blocos = SECOES.map((s) => {
     const ns = lista.filter((n) => secaoDe(n) === s && !usadas.has(n));
@@ -487,8 +530,11 @@ async function capa() {
         ${sobreHTML(princ, "principal", 1280)}
         <div class="hero-lado">${lado.map((n) => sobreHTML(n, "lateral-c", 640)).join("")}</div>
       </div>
+      ${relac.length ? `<ul class="relac">${relac.map((n) => `<li><a href="${linkMateria(n)}"><i style="--cor:${corDe(n)}"></i>${esc(n.titulo)}</a></li>`).join("")}</ul>` : ""}
       ${quatro.length ? `<div class="quatro">${quatro.map((n) => fotoCardHTML(n)).join("")}</div>` : ""}
+      ${redeBox()}
     </div></section>
+    ${compactas.length ? `<section class="wrap compactas"><h2 class="secao">Mais notícias agora</h2><div class="cmp-grade">${compactas.map((n) => `<a class="cmp" href="${linkMateria(n)}"><img src="${fotoSrc(n.foto, 330)}" alt="" loading="lazy" ${reserva(n)}><span><em style="--cor:${corDe(n)}">${esc(n.editoria)}</em><b>${esc(n.titulo)}</b></span></a>`).join("")}</div></section>` : ""}
     ${zapFaixa()}
     <div class="capa">
       <div><h2 class="secao">Últimas notícias</h2><div class="feed">${ultimas.map(linhaHTML).join("")}</div></div>
@@ -499,6 +545,7 @@ async function capa() {
   carregarTempo();
   carregarMercado();
   carregarCapitais();
+  carregarRede();
   mostrarInstalar();
   mostrarAvisos();
   efeitos3D();
@@ -1177,7 +1224,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "21";
+const VERSAO_SITE = "22";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {

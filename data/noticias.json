@@ -754,6 +754,60 @@
       "credito_foto": "Bruno Peres/Agência Brasil"
     },
     {
+      "id": "2026-11-26-bolsa-dispara-6-maior-alta-desde-o-1o-turno-e-dolar-cai-para",
+      "data": "2026-11-26",
+      "editoria": "ECONOMIA",
+      "titulo": "Bolsa dispara 6%, maior alta desde o 1º turno, e dólar cai para R$ 5,74",
+      "resumo": "O Ibovespa, principal índice da Bolsa brasileira, subiu 6,07% nesta quinta-feira (26) e fechou aos 176.799 pontos. Foi a maior alta em um só dia desde 5 de outubro, logo depois do primeiro turno das eleições.",
+      "texto": [
+        "O Ibovespa, principal índice da Bolsa brasileira, subiu 6,07% nesta quinta-feira (26) e fechou aos 176.799 pontos. Foi a maior alta em um só dia desde 5 de outubro, logo depois do primeiro turno das eleições.",
+        "O dólar caiu e fechou a R$ 5,74, abaixo de R$ 5,80 pela primeira vez em quase duas semanas.",
+        "Segundo o mercado, o movimento veio da expectativa com Luiz Carlos Trabuco no Ministério da Fazenda, de sinais sobre o ajuste das contas públicas e da prévia da inflação abaixo do esperado."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bolsa-sobe-6-e-tem-maior-alta-desde-o-1o-turno-dolar-cai-r-574",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-26-ensino-superior-bate-recorde-com-10-6-milhoes-de-matriculas",
+      "data": "2026-11-26",
+      "editoria": "BRASIL",
+      "titulo": "Ensino superior bate recorde com 10,6 milhões de matrículas",
+      "resumo": "O Brasil chegou a 10,6 milhões de matrículas em cursos de graduação em 2025, o maior número já registrado, segundo o Censo da Educação Superior divulgado pelo Inep nesta quinta-feira (26). A alta foi de 4% sobre 2024.",
+      "texto": [
+        "O Brasil chegou a 10,6 milhões de matrículas em cursos de graduação em 2025, o maior número já registrado, segundo o Censo da Educação Superior divulgado pelo Inep nesta quinta-feira (26). A alta foi de 4% sobre 2024.",
+        "Em dez anos, as matrículas cresceram 32,4%. Pela primeira vez, o censo contou também os cursos semipresenciais, que exigem pelo menos metade das atividades presenciais.",
+        "O ministro da Educação, Leandro Barchini, lembrou que um diploma universitário pode render salário até 2,5 vezes maior no Brasil."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/brasil-atinge-recorde-de-106-milhoes-de-matriculas-no-ensino-superior",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/QwSrxrKcht-OKId9ztKLYLix2O8=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/06/toms6045.jpg",
+      "credito_foto": "Tomaz Silva/Agência Brasil"
+    },
+    {
+      "id": "2026-11-26-festival-de-inovacao-de-itaipu-espera-30-mil-pessoas-em-foz",
+      "data": "2026-11-26",
+      "editoria": "TECNOLOGIA",
+      "titulo": "Festival de inovação de Itaipu espera 30 mil pessoas em Foz do Iguaçu",
+      "resumo": "Começou nesta quarta-feira (25) o Festival Iguassu Inova, no lado brasileiro da Usina de Itaipu, em Foz do Iguaçu (PR). O evento é gratuito e vai até sábado (28).",
+      "texto": [
+        "Começou nesta quarta-feira (25) o Festival Iguassu Inova, no lado brasileiro da Usina de Itaipu, em Foz do Iguaçu (PR). O evento é gratuito e vai até sábado (28).",
+        "Organizado pelo Itaipu Parquetec, instituto de ciência e tecnologia ligado à hidrelétrica, o festival junta ciência, inovação, empreendedorismo, negócios, música e cultura. A expectativa é receber mais de 30 mil pessoas.",
+        "Esta é a terceira edição do festival, que ocupa cerca de 90 mil metros quadrados, o equivalente a 13 campos de futebol."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/geral/noticia/2026-11/itaipu-atrai-estudantes-e-empreendedores-para-festival-de-inovacao",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/DDFR61TokKbmcIfh1GT1ulxov1U=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/26/55673418929_f729faf356_o_0.jpg",
+      "credito_foto": "Kiko Sierich/Festival Iguassu Inova",
+      "evento": {
+        "data": "2026-11-25",
+        "fim": "2026-11-28",
+        "local": "Itaipu Parquetec, Foz do Iguaçu (PR)"
+      }
+    },
+    {
       "id": "2026-11-25-atletico-mg-empata-no-fim-e-corinthians-segue-ameacado-no-br",
       "data": "2026-11-25",
       "hora": "23h",
@@ -913,6 +967,223 @@
       "imagem": "",
       "foto": "https://global.unitednations.entermediadb.net/assets/mediadb/services/module/asset/downloads/preset/Collections/Production%20Library/18-03-2026_UNICEF_Afghanistan.jpg/image770x420cropped.jpg",
       "credito_foto": "© UNICEF/Omid Fazel"
+    },
+    {
+      "id": "2026-11-25-camara-aprova-protocolo-contra-racismo-nas-escolas-texto-vai",
+      "data": "2026-11-25",
+      "editoria": "CONGRESSO",
+      "titulo": "Câmara aprova protocolo contra racismo nas escolas; texto vai ao Senado",
+      "resumo": "A Câmara dos Deputados aprovou nesta quarta-feira (25), por 320 votos a 102, um projeto que cria um protocolo nacional para acolher vítimas de racismo em escolas públicas e particulares. O texto segue para o Senado.",
+      "texto": [
+        "A Câmara dos Deputados aprovou nesta quarta-feira (25), por 320 votos a 102, um projeto que cria um protocolo nacional para acolher vítimas de racismo em escolas públicas e particulares. O texto segue para o Senado.",
+        "Cada escola terá de indicar um profissional responsável pelo protocolo. Estão previstos acolhimento imediato da vítima, atendimento psicológico gratuito, proteção contra retaliação e aviso às autoridades, ao Conselho Tutelar e ao Ministério Público nos casos mais graves.",
+        "As regras valem também para casos em ambientes virtuais ligados à comunidade escolar. O projeto é da deputada Carol Dartora (PT-PR), com relatoria de Benedita da Silva (PT-RJ)."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/direitos-humanos/noticia/2026-11/camara-aprova-protocolo-nacional-para-combater-racismo-nas-escolas",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/D3xMcnRv35Upk02ztOUTcHvDRdk=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/mcamg_abr_10052019_9651.jpg",
+      "credito_foto": "Marcelo Camargo/Agência Brasil"
+    },
+    {
+      "id": "2026-11-25-banco-central-aperta-regras-de-credito-para-conter-o-superen",
+      "data": "2026-11-25",
+      "editoria": "SEU DINHEIRO",
+      "titulo": "Banco Central aperta regras de crédito para conter o superendividamento",
+      "resumo": "O Conselho Monetário Nacional e o Banco Central aprovaram nesta quarta-feira (25) um pacote para evitar que as famílias se endividem demais. As regras deixam mais rígida a concessão de empréstimos e ampliam a proteção de quem já está com dificuldade para pagar.",
+      "texto": [
+        "O Conselho Monetário Nacional e o Banco Central aprovaram nesta quarta-feira (25) um pacote para evitar que as famílias se endividem demais. As regras deixam mais rígida a concessão de empréstimos e ampliam a proteção de quem já está com dificuldade para pagar.",
+        "O pacote também quer reduzir o uso frequente do rotativo do cartão de crédito e obrigar os bancos a identificar melhor clientes com grande parte da renda comprometida. O número de superendividados cresceu 75% em cinco anos, segundo o BC.",
+        "A maior parte das medidas começa a valer em 1º de julho de 2027. Consultas públicas sobre o tema ficam abertas por 90 dias."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/cmn-e-bc-anunciam-novas-regras-para-conter-endividamento-das-familias",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/qv1-RBHp0M3IaFURJMkSMNEHorA=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/real_moeda_dinheiro_mcajr_2904223667.jpg",
+      "credito_foto": "Marcello Casal Jr/Agência Brasil"
+    },
+    {
+      "id": "2026-11-25-stf-mantem-regra-acao-trabalhista-tem-de-dizer-quanto-o-trab",
+      "data": "2026-11-25",
+      "editoria": "JUSTIÇA",
+      "titulo": "STF mantém regra: ação trabalhista tem de dizer quanto o trabalhador pede",
+      "resumo": "O Supremo Tribunal Federal decidiu nesta quarta-feira (25) que quem entra com uma ação trabalhista precisa informar, já no pedido, o valor da indenização que quer receber.",
+      "texto": [
+        "O Supremo Tribunal Federal decidiu nesta quarta-feira (25) que quem entra com uma ação trabalhista precisa informar, já no pedido, o valor da indenização que quer receber.",
+        "A regra foi criada pela Reforma Trabalhista de 2017 e questionada pela OAB em 2018. Para a entidade, a exigência dificultava o acesso à Justiça. O STF, porém, manteve o texto da CLT."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/stf-mantem-indicacao-previa-de-valor-em-acoes-trabalhistas",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/okB-tE75oY_7pPSoojizYhidhCo=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/stf_1908200976.jpg",
+      "credito_foto": "Marcello Casal Jr/Agência Brasil/Arquivo"
+    },
+    {
+      "id": "2026-11-25-ministerio-da-saude-manda-kits-e-equipes-para-tupancireta-rs",
+      "data": "2026-11-25",
+      "editoria": "SAÚDE",
+      "titulo": "Ministério da Saúde manda kits e equipes para Tupanciretã (RS) após temporal",
+      "resumo": "O Ministério da Saúde enviou dois kits de emergência com remédios e material de curativo para Tupanciretã, no Rio Grande do Sul, atingida por uma tempestade no dia 20. Cada kit atende até 1,5 mil pessoas.",
+      "texto": [
+        "O Ministério da Saúde enviou dois kits de emergência com remédios e material de curativo para Tupanciretã, no Rio Grande do Sul, atingida por uma tempestade no dia 20. Cada kit atende até 1,5 mil pessoas.",
+        "A Força Nacional do SUS ajuda a reabrir os postos de saúde danificados pelo vendaval. Desde quarta-feira (25), uma unidade móvel atende no bairro Chiapetta, um dos mais atingidos, com médicos e apoio psicológico."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/tupancireta-governo-envia-equipe-e-kits-emergenciais-para-atendimento",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-25-tcu-arquiva-multas-a-dilma-e-ex-auxiliares-no-caso-das-pedal",
+      "data": "2026-11-25",
+      "editoria": "POLÍTICA",
+      "titulo": "TCU arquiva multas a Dilma e ex-auxiliares no caso das pedaladas",
+      "resumo": "O Tribunal de Contas da União decidiu por unanimidade, nesta quarta-feira (25), não multar a ex-presidente Dilma Rousseff e ex-integrantes da equipe econômica pelas irregularidades fiscais de 2014, as chamadas pedaladas. O processo foi arquivado.",
+      "texto": [
+        "O Tribunal de Contas da União decidiu por unanimidade, nesta quarta-feira (25), não multar a ex-presidente Dilma Rousseff e ex-integrantes da equipe econômica pelas irregularidades fiscais de 2014, as chamadas pedaladas. O processo foi arquivado.",
+        "A decisão não muda a rejeição das contas do governo daquele ano. Para o relator, ministro Odair Cunha, não havia elementos para punir cada agente, porque as decisões se basearam em pareceres técnicos e jurídicos da época.",
+        "Também eram alvo do processo o ex-ministro Guido Mantega, a atual ministra da Casa Civil, Miriam Belchior, e o ex-secretário do Tesouro Arno Augustin."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/tcu-afasta-multas-dilma-e-auxiliares-por-irregularidades-fiscais",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/h72AmDYvKP1tBs7d69gjPycPpT0=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/1006567-16032016dsc_2684-.jpg",
+      "credito_foto": "Wilson Dias/Agência Brasil"
+    },
+    {
+      "id": "2026-11-25-governo-bloqueia-quase-4-mil-celulares-usados-dentro-de-pres",
+      "data": "2026-11-25",
+      "editoria": "BRASIL",
+      "titulo": "Governo bloqueia quase 4 mil celulares usados dentro de presídios",
+      "resumo": "O Ministério da Justiça bloqueou 3.941 celulares usados por presos entre 13 de outubro e 24 de novembro. O balanço foi divulgado nesta quarta-feira (25), na inauguração do Centro Nacional de Inteligência Penal, em Brasília.",
+      "texto": [
+        "O Ministério da Justiça bloqueou 3.941 celulares usados por presos entre 13 de outubro e 24 de novembro. O balanço foi divulgado nesta quarta-feira (25), na inauguração do Centro Nacional de Inteligência Penal, em Brasília.",
+        "Desde um decreto de outubro, os estados podem pedir o bloqueio direto à Anatel, sem ordem judicial. O aparelho é cortado da rede pelo IMEI, o código de cada celular, mesmo que continue escondido na cadeia."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/ministerio-da-justica-bloqueia-4-mil-celulares-em-presidios",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/Fd1afV0xilewCxCZCBCyJP2v8_M=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/25/_mmm8898.jpg",
+      "credito_foto": "Joédson Alves/Agência Brasil"
+    },
+    {
+      "id": "2026-11-25-stf-marca-para-4-de-dezembro-julgamento-sobre-2o-turno-no-ri",
+      "data": "2026-11-25",
+      "editoria": "JUSTIÇA",
+      "titulo": "STF marca para 4 de dezembro julgamento sobre 2º turno no Rio",
+      "resumo": "O ministro Cristiano Zanin, do STF, marcou para 4 de dezembro o julgamento do pedido de segundo turno na eleição para governador do Rio de Janeiro. A votação será no plenário virtual e fica aberta até 15 de dezembro.",
+      "texto": [
+        "O ministro Cristiano Zanin, do STF, marcou para 4 de dezembro o julgamento do pedido de segundo turno na eleição para governador do Rio de Janeiro. A votação será no plenário virtual e fica aberta até 15 de dezembro.",
+        "O PSD, partido de Eduardo Paes, quer suspender a decisão do TSE que anulou os votos de Anthony Garotinho e recontou o resultado. Com isso, Douglas Ruas (PL) foi declarado eleito no primeiro turno.",
+        "Em outubro, Zanin, relator do caso, já tinha negado um primeiro pedido do partido."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/justica/noticia/2026-11/stf-marca-julgamento-sobre-eleicoes-no-rio-para-4-de-dezembro",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/pSzH81t4oBpuN_eHmLGCMGL8qmc=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/_mg_8440.jpg",
+      "credito_foto": "Fernando Frazão/Agência Brasil"
+    },
+    {
+      "id": "2026-11-25-ia-nao-vai-acabar-com-profissoes-criativas-diz-professora-da",
+      "data": "2026-11-25",
+      "editoria": "TECNOLOGIA",
+      "titulo": "IA não vai acabar com profissões criativas, diz professora da USP",
+      "resumo": "Para a artista e professora da USP Giselle Beiguelman, a inteligência artificial generativa é uma ferramenta que artistas, designers e animadores podem aproveitar, e não o fim dessas profissões.",
+      "texto": [
+        "Para a artista e professora da USP Giselle Beiguelman, a inteligência artificial generativa é uma ferramenta que artistas, designers e animadores podem aproveitar, e não o fim dessas profissões.",
+        "Ela compara com a fotografia digital, que não acabou com os fotógrafos. \"Se você digitar qualquer coisa na IA, sairá alguma coisa pronta. Mas não quer dizer que aquilo é um trabalho artístico\", disse.",
+        "O tema foi debatido no Animage, festival internacional de animação que acontece no Recife até 29 de novembro."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/ia-generativa-nao-vai-acabar-com-profissoes-criativasdiz-professora",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/k7LYUmnHFOuzpgWCxdgCb9DiX6I=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/25/img_1679.jpg",
+      "credito_foto": "Hermes Costa Neto/Festival Animage"
+    },
+    {
+      "id": "2026-11-25-renoir-em-brasilia-exposicao-gratis-traz-11-obras-do-masp",
+      "data": "2026-11-25",
+      "editoria": "CULTURA",
+      "titulo": "Renoir em Brasília: exposição grátis traz 11 obras do Masp",
+      "resumo": "A exposição Renoir abriu nesta quinta-feira (26) no Centro Cultural TCU, em Brasília, com 11 obras do pintor francês, um dos principais nomes do impressionismo. A entrada é gratuita e a mostra fica até 14 de fevereiro de 2027.",
+      "texto": [
+        "A exposição Renoir abriu nesta quinta-feira (26) no Centro Cultural TCU, em Brasília, com 11 obras do pintor francês, um dos principais nomes do impressionismo. A entrada é gratuita e a mostra fica até 14 de fevereiro de 2027.",
+        "São dez pinturas e uma escultura do acervo do Masp, que chegam pela primeira vez à capital. Entre elas estão retratos dos filhos do artista e a escultura Vênus Vitoriosa, de 1916.",
+        "Os visitantes também podem entrar na sala imersiva Rosa e azul, inspirada em uma pintura de Renoir."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/exposicao-com-obras-de-renoir-chega-brasilia-nesta-quinta-feira",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/cGktTFHHjOQ0KAR6ZDyACwjQ2yI=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/25/renoir-mc_abr_25112026-12.jpg",
+      "credito_foto": "Marcelo Camargo/Agência Brasil",
+      "evento": {
+        "data": "2026-11-26",
+        "fim": "2027-02-14",
+        "local": "Centro Cultural TCU, Brasília (DF)"
+      }
+    },
+    {
+      "id": "2026-11-25-governo-lanca-a-campanha-copa-mais-brasileira-do-mundo-para",
+      "data": "2026-11-25",
+      "editoria": "ESPORTE",
+      "titulo": "Governo lança a campanha \"Copa Mais Brasileira do Mundo\" para o Mundial feminino",
+      "resumo": "O Ministério do Esporte lançou nesta quarta-feira (25) a campanha A Copa Mais Brasileira do Mundo, para divulgar a Copa do Mundo Feminina de 2027, que será no Brasil.",
+      "texto": [
+        "O Ministério do Esporte lançou nesta quarta-feira (25) a campanha A Copa Mais Brasileira do Mundo, para divulgar a Copa do Mundo Feminina de 2027, que será no Brasil.",
+        "Os perfis do governo federal adotaram a identidade visual oficial do torneio, apresentada na terça (24) no Itamaraty. A campanha tem ainda o jingle Ela é Brasileira, cantado por Mariah Marini, que mistura funk e piseiro."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/governo-lanca-campanha-copa-mais-brasileira-do-mundo",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-25-filosofia-e-sociologia-podem-voltar-com-2-horas-por-semana-n",
+      "data": "2026-11-25",
+      "editoria": "BRASIL",
+      "titulo": "Filosofia e sociologia podem voltar com 2 horas por semana no ensino médio",
+      "resumo": "A Comissão de Educação da Câmara aprovou nesta quarta-feira (25) um projeto que obriga as escolas a oferecer filosofia e sociologia em todas as séries do ensino médio, com média de duas horas semanais de aula.",
+      "texto": [
+        "A Comissão de Educação da Câmara aprovou nesta quarta-feira (25) um projeto que obriga as escolas a oferecer filosofia e sociologia em todas as séries do ensino médio, com média de duas horas semanais de aula.",
+        "As duas matérias viraram opcionais com o Novo Ensino Médio, em 2017. Uma lei de 2024 voltou a exigir as disciplinas, mas sem carga mínima, o que, segundo especialistas, travava o retorno delas.",
+        "O texto também exige que os professores tenham licenciatura na área."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/educacao/noticia/2026-11/comissao-fixa-carga-minima-filosofia-e-sociologia-no-ensino-medio",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/fzzk_eW0rm3F28OJyaFyuhdAJ2s=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/25/0d9a6416.jpg",
+      "credito_foto": "Lula Marques/Agência Brasil"
+    },
+    {
+      "id": "2026-11-25-congo-do-espirito-santo-e-quilombo-frechal-ma-viram-patrimon",
+      "data": "2026-11-25",
+      "editoria": "CULTURA",
+      "titulo": "Congo do Espírito Santo e Quilombo Frechal (MA) viram patrimônio do Brasil",
+      "resumo": "O Iphan reconheceu nesta terça-feira (24) as bandas de Congo do Espírito Santo e o Quilombo Frechal, no Maranhão, como patrimônio cultural do país.",
+      "texto": [
+        "O Iphan reconheceu nesta terça-feira (24) as bandas de Congo do Espírito Santo e o Quilombo Frechal, no Maranhão, como patrimônio cultural do país.",
+        "O Congo capixaba entrou no livro das formas de expressão do patrimônio imaterial. Já o Quilombo Frechal, em Mirinzal, a 424 km de São Luís, foi tombado. É um dos territórios quilombolas mais antigos do Maranhão e símbolo da resistência da população negra."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/congo-do-es-e-quilombo-frechal-ma-tornam-se-patrimonios-culturais",
+      "imagem": ""
+    },
+    {
+      "id": "2026-11-25-feira-nacional-da-reforma-agraria-reune-80-expositores-em-br",
+      "data": "2026-11-25",
+      "editoria": "CULTURA",
+      "titulo": "Feira nacional da reforma agrária reúne 80 expositores em Brasília até sábado",
+      "resumo": "A 1ª Feira Nacional do Cooperativismo da Reforma Agrária Popular está aberta até sábado (28) no estacionamento do ICC Sul, na Universidade de Brasília. A entrada é gratuita.",
+      "texto": [
+        "A 1ª Feira Nacional do Cooperativismo da Reforma Agrária Popular está aberta até sábado (28) no estacionamento do ICC Sul, na Universidade de Brasília. A entrada é gratuita.",
+        "Cerca de 80 expositores vendem alimentos e artesanato de assentamentos de todo o país. A programação tem praça de alimentação, debates sobre agroecologia, cinema e shows, como os de Ellen Oléria e GOG."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/feira-da-reforma-agraria-reune-cerca-de-80-expositores-na-unb",
+      "imagem": "",
+      "evento": {
+        "data": "2026-11-25",
+        "fim": "2026-11-28",
+        "local": "ICC Sul, UnB, Brasília (DF)"
+      }
     },
     {
       "id": "2026-11-24-mais-de-100-paises-se-comprometem-a-vigiar-danos-de-produtos",
