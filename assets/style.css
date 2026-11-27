@@ -894,3 +894,4 @@ body{background:#eef1f6}
   .rv{opacity:1;transform:none}
   .ao-vivo::before{animation:none}
 }
+html,body{overflow-x:clip}

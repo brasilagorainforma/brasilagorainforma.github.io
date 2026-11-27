@@ -214,7 +214,11 @@ const fotoDe = (n) =>
 // largura: miniaturas do Wikimedia em tamanho menor para carregar rápido no celular
 const fotoSrc = (u, largura) => {
   u = String(u || "");
-  if (largura) u = u.replace(/\/(\d+)px-([^/]+)$/, `/${largura}px-$2`);
+  // o Wikimedia só entrega miniaturas em tamanhos padrão: arredonda para cima
+  if (largura) {
+    const w = [330, 500, 960, 1280].find((x) => x >= largura) || 1280;
+    u = u.replace(/\/(\d+)px-([^/]+)$/, `/${w}px-$2`);
+  }
   return /^https?:\/\//i.test(u) || /^midia\//.test(u) ? esc(u) : "";
 };
 // Se a foto externa falhar: troca pelo card da notícia; sem card, some e fica o fundo na cor da seção.
@@ -1117,7 +1121,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "13";
+const VERSAO_SITE = "14";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
