@@ -361,6 +361,10 @@ function fotoCardHTML(n, grande) {
   return `<a class="foto-card${grande ? " grande" : ""}" href="${linkMateria(n)}" style="--cor:${corDe(n)}">${thumbHTML(n, true, 640)}
     <div class="fc-corpo">${tagHTML(n)}<h3>${esc(n.titulo)}</h3>${grande && n.resumo ? `<p>${esc(n.resumo)}</p>` : ""}<div class="meta">${horaDe(n)} · ${esc(n.fonte)}</div></div></a>`;
 }
+// sem foto real: cartão só com texto (evita repetir a mesma arte da seção lado a lado)
+function textoCardHTML(n) {
+  return `<a class="foto-card so-texto" href="${linkMateria(n)}" style="--cor:${corDe(n)}"><div class="fc-corpo">${tagHTML(n)}<h3>${esc(n.titulo)}</h3>${n.resumo ? `<p>${esc(n.resumo)}</p>` : ""}<div class="meta">${horaDe(n)} · ${esc(n.fonte)}</div></div></a>`;
+}
 function linhaHTML(n) {
   return `<a class="linha" href="${linkMateria(n)}" style="--cor:${corDe(n)}"><span class="l-hora">${n.hora ? esc(n.hora) : dataBR(n.data)}</span>${thumbHTML(n, true, 330)}
     <div>${tagHTML(n)}<h3>${esc(n.titulo)}</h3></div></a>`;
@@ -424,7 +428,7 @@ async function capa() {
     return `<section class="bloco2${s.slug === "mundo" ? " escuro" : ""}" style="--cor:${s.cor}">
       <a class="b2-capa rv" href="./?secao=${s.slug}"><span class="b2-arte" style="background-image:url(midia/capas/${s.slug}.jpg)"></span><span class="wrap"><b>${s.nome}</b><small>${esc(s.desc)}</small><i>Mais de ${s.nome} →</i></span></a>
       <div class="wrap">
-      <div class="b2-c">${sobreHTML(p, "b2-grande", 900)}<div class="b2-grade">${r.map((n) => fotoCardHTML(n)).join("")}</div></div></div></section>`;
+      <div class="b2-c">${sobreHTML(p, "b2-grande", 900)}<div class="b2-grade">${r.map((n) => (temFoto(n) ? fotoCardHTML(n) : textoCardHTML(n))).join("")}</div></div></div></section>`;
   }).join("");
 
   $("#conteudo").innerHTML = `
@@ -1121,7 +1125,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "14";
+const VERSAO_SITE = "15";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {

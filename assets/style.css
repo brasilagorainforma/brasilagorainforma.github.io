@@ -895,3 +895,8 @@ body{background:#eef1f6}
   .ao-vivo::before{animation:none}
 }
 html,body{overflow-x:clip}
+.foto-card.so-texto{border-top:4px solid var(--cor)}
+.foto-card.so-texto .fc-corpo{border-top:0;height:100%}
+.foto-card.so-texto h3{font-size:18px}
+.foto-card.so-texto p{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
+.bloco2.escuro .foto-card.so-texto p{color:#cbbfe6}
