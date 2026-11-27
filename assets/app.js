@@ -17,7 +17,7 @@ const SECOES = [
     slug: "brasil",
     nome: "Brasil",
     cor: "#0b2a5b",
-    desc: "O que acontece no país: estados, cidades, segurança, clima e serviço.",
+    desc: "O que acontece no mundo e no país: estados, cidades, segurança, clima e serviço.",
     editorias: ["BRASIL", "NACIONAL", "CIDADES", "ESTADOS", "SEGURANÇA", "CLIMA", "TEMPO", "URGENTE"],
   },
   {
@@ -165,7 +165,7 @@ function montarTopo(ativa) {
   <header class="topo"><div class="wrap">
     <a class="marca" href="./">
       <img class="selo" src="${SELO}" alt="" onerror="this.remove()">
-      <div class="nome">BRASIL AGORA <span>INFORMA</span><small>NOTÍCIAS DO BRASIL</small></div>
+      <div class="nome">BRASIL AGORA <span>INFORMA</span><small>NOTÍCIAS DO BRASIL E DO MUNDO</small></div>
     </a>
     <div class="topo-dir"><button class="btn-avisos" type="button" hidden aria-label="Ativar avisos no celular">🔔 <span>Ativar avisos</span></button><button class="btn-instalar" type="button" hidden>📲 Instalar o app</button><nav class="redes" aria-label="Redes sociais">${redesHTML()}</nav></div>
   </div></header>
@@ -1126,7 +1126,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "17";
+const VERSAO_SITE = "18";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
