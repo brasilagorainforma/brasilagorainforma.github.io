@@ -1033,3 +1033,100 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
 /* manchetes na cor da editoria (como os grandes portais): futebol de uma cor, cultura e famosos de outra etc. */
 .linha h3,.cmp b,.foto-card h3,.q-rel,.relac a{color:color-mix(in srgb,var(--cor,#fff) 38%,#ffffff)}
 .linha:hover h3,.cmp:hover b,.foto-card:hover h3{color:#fff}
+
+/* =====================================================================
+   CELULAR v5 (27/11/2026): "no celular tá muito pobre". Topo compacto, menu deslizante,
+   manchete com foto inteira e texto embaixo, cartões densos em lista.
+   ===================================================================== */
+@media (max-width:640px){
+  /* topo em uma linha: selo + nome + sino/instalar; redes ficam no rodapé */
+  .topo .wrap{flex-wrap:nowrap;padding-top:10px;padding-bottom:10px;gap:8px;align-items:center}
+  .topo .selo{width:38px;height:38px}
+  .topo .marca{gap:8px;min-width:0;flex:1}
+  .topo .nome{font-size:15px;line-height:1.1;white-space:nowrap}
+  .topo .nome small{font-size:8.5px;letter-spacing:1.2px;margin-top:2px}
+  .topo .topo-dir{gap:6px;flex:none}
+  .topo .topo-dir .redes{display:none}
+  .btn-avisos{width:36px;height:36px;padding:0 !important;font-size:16px !important;margin:0;display:grid;place-items:center;box-shadow:0 0 0 2px var(--ouro)}
+  .btn-avisos[hidden],.btn-instalar[hidden]{display:none !important}
+  .btn-instalar{padding:8px 11px !important;font-size:12px !important}
+
+  /* menu: uma faixa que desliza para o lado, fixa no alto ao rolar */
+  .secoes{position:sticky;top:0}
+  .secoes .wrap{display:flex !important;flex-wrap:nowrap;overflow-x:auto;gap:2px;padding:0 10px;scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 90%,transparent)}
+  .secoes a{flex:none;border:0 !important;border-bottom:3px solid transparent !important;padding:12px 10px !important;font-size:13px !important;background:none !important;text-align:left;scroll-snap-align:start}
+  .secoes a[aria-current=page]{border-bottom-color:var(--cor,#F5B700) !important;color:#fff !important}
+
+  /* faixa do dia: só dólar e euro, numa linha */
+  .hoje .wrap{flex-direction:row !important;flex-wrap:nowrap;justify-content:center;padding-top:6px;padding-bottom:6px}
+  .hoje .wrap>span:not(.cot-topo){display:none}
+  .cot-topo{width:auto;justify-content:center;font-size:12.5px;gap:16px}
+
+  .plantao .wrap{padding-top:6px;padding-bottom:6px}
+
+  /* palco: manchete com a foto inteira (16:9) e o título embaixo */
+  .palco{padding-top:12px}
+  .palco-cab{margin-bottom:10px;font-size:11px}
+  .sobre-card.principal{aspect-ratio:auto !important;min-height:0 !important;display:flex;flex-direction:column;border-radius:14px}
+  .sobre-card.principal img{position:relative;inset:auto;height:auto;aspect-ratio:16/9;object-position:center 60%}
+  .sobre-card.principal .sobre-txt{position:relative;padding:14px 16px 16px !important;background:linear-gradient(180deg,#0c1d3d,#081530)}
+  .sobre-card.principal h2{font-size:24px !important;line-height:1.12}
+  .sobre-card.principal p{-webkit-line-clamp:3}
+
+  /* as duas ao lado da manchete: lista com foto à esquerda */
+  .hero{gap:10px}
+  .hero-lado{grid-template-columns:1fr !important;gap:10px}
+  .sobre-card.lateral-c{min-height:0;display:flex;align-items:stretch;border-radius:12px;background:#0c1d3d}
+  .sobre-card.lateral-c img{position:relative;inset:auto;width:118px;height:auto;min-height:88px;flex:none;aspect-ratio:4/3}
+  .sobre-card.lateral-c .sobre-txt{position:relative;padding:10px 12px;background:none}
+  .sobre-card.lateral-c h2{font-size:15.5px;margin:6px 0 4px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+  .relac{margin:12px 0 14px;gap:8px}
+  .relac a{font-size:14.5px}
+
+  /* quatro destaques: lista densa, foto pequena à esquerda */
+  .quatro{grid-template-columns:1fr !important;gap:10px}
+  .q-cel{gap:4px}
+  .quatro .foto-card{flex-direction:row;border-radius:12px}
+  .quatro .foto-card .thumb{width:118px;flex:none;aspect-ratio:4/3}
+  .quatro .fc-corpo{border-top:0;border-left:3px solid var(--cor);padding:8px 10px !important;gap:4px}
+  .quatro .foto-card h3{font-size:15px !important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .quatro .foto-card .meta{display:none}
+  .q-rel{font-size:13px;padding:0 6px 4px}
+
+  .rede{padding:10px 12px}
+  .rede-card img{width:64px;height:48px}
+
+  /* faixa compacta e últimas */
+  .compactas{margin-top:18px}
+  .cmp{padding:6px}
+  .cmp img{width:96px;height:72px}
+  .linha{gap:10px}
+
+  /* blocos por editoria: capa da seção mais baixa */
+  .b2-capa{min-height:120px}
+  .b2-grade{grid-template-columns:1fr !important}
+  .b2-grade .foto-card{flex-direction:row}
+  .b2-grade .foto-card .thumb{width:118px;flex:none;aspect-ratio:4/3}
+  .b2-grade .fc-corpo{border-top:0;border-left:3px solid var(--cor);padding:8px 10px}
+  .b2-grade .foto-card .meta{display:none}
+  .sobre-card.b2-grande{min-height:240px}
+
+  .anuncio-faixa{margin:16px 12px;padding:12px 14px}
+  .anuncio b{font-size:18px}
+  .futebol{margin:22px auto}
+  .fut-jogos li{grid-template-columns:74px 1fr auto 1fr;font-size:13px;gap:6px}
+  .fut-jogos li small{font-size:11px}
+}
+@media (max-width:640px){
+  .topo .marca{overflow:hidden}
+  .topo .nome{overflow:hidden;font-size:14.5px}
+  .topo .nome small{overflow:hidden;text-overflow:ellipsis}
+  .btn-instalar{font-size:0 !important;padding:8px 10px !important}
+  .btn-instalar::after{content:"📲 App";font-size:12.5px;font-weight:800}
+}
+@media (max-width:370px){.topo .nome small{display:none}}
+/* convite de instalar: texto legível no tema escuro */
+#instalar{background:#0c1d3d !important;color:#e8eef9 !important;border:1px solid rgba(245,183,0,.5)}
+#instalar p,#instalar b{color:#e8eef9 !important}
+#instalar .fechar{color:#9fb0cc !important}
