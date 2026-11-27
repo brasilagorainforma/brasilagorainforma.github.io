@@ -309,6 +309,13 @@ const FOTO_PADRAO = Object.fromEntries(
 // Sempre que possível, uma foto: a da notícia, a padrão da seção ou o card da notícia.
 const fotoDe = (n) =>
   n.foto || (FOTO_PADRAO[secaoDe(n).slug] || {}).url || n.imagem || "";
+// crédito pequeno sobre a foto, em todos os cartões (pedido do Usba, 27/11)
+const credDe = (n) => {
+  const c = n.foto ? n.credito_foto || "" : fotoDe(n) && !n.imagem ? ARTE : "";
+  if (!c) return "";
+  const txt = c === ARTE || /^(imagem|arte) ilustrativa/i.test(c) ? c : "Foto: " + c;
+  return `<small class="cred">${esc(txt)}</small>`;
+};
 // largura: miniaturas do Wikimedia em tamanho menor para carregar rápido no celular
 const fotoSrc = (u, largura) => {
   u = String(u || "");
@@ -326,7 +333,7 @@ const reserva = (n) =>
 function thumbHTML(n, lazy = true, largura = 500) {
   const f = fotoSrc(fotoDe(n), largura);
   if (f)
-    return `<div class="thumb${!n.foto && f === esc(n.imagem) ? " de-card" : ""}" style="--cor:${corDe(n)}"><img src="${f}" alt="" ${lazy ? 'loading="lazy"' : ""} decoding="async" ${reserva(n)} width="1200" height="675"></div>`;
+    return `<div class="thumb${!n.foto && f === esc(n.imagem) ? " de-card" : ""}" style="--cor:${corDe(n)}"><img src="${f}" alt="" ${lazy ? 'loading="lazy"' : ""} decoding="async" ${reserva(n)} width="1200" height="675">${credDe(n)}</div>`;
   const s = secaoDe(n);
   return `<div class="thumb bloco-cor" style="--cor:${corDe(n)}"><span>${(n.editoria || "").toUpperCase() === "URGENTE" ? "Urgente" : esc(s.nome)}</span></div>`;
 }
@@ -531,7 +538,7 @@ const temFoto = (n) => !!fotoSrc(n.foto);
 function sobreHTML(n, cls = "", largura) {
   const f = fotoSrc(fotoDe(n), largura);
   const fundo = f
-    ? `<img src="${f}" alt="" decoding="async" ${cls.includes("principal") ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.remove()" width="1200" height="675">`
+    ? `<img src="${f}" alt="" decoding="async" ${cls.includes("principal") ? 'fetchpriority="high"' : 'loading="lazy"'} onerror="this.remove()" width="1200" height="675">${credDe(n)}`
     : "";
   return `<a class="sobre-card ${cls}" href="${linkMateria(n)}" style="--cor:${corDe(n)}">${fundo}
     <div class="sobre-txt">${tagHTML(n)}<h2>${esc(n.titulo)}</h2>${cls.includes("principal") && n.resumo ? `<p>${esc(n.resumo)}</p>` : ""}<div class="meta">${horaDe(n)} · ${esc(n.fonte)}</div></div></a>`;
@@ -769,7 +776,7 @@ async function materia() {
       : null;
   const midia =
     fm && fotoSrc(fm.url)
-      ? `<figure class="foto-mat"><img src="${fotoSrc(fm.url)}" alt="" ${reserva(n)} width="1200" height="675">${fm.credito ? `<figcaption>${fm.credito === ARTE ? "" : "Foto: "}${esc(fm.credito)}</figcaption>` : ""}</figure>`
+      ? `<figure class="foto-mat"><img src="${fotoSrc(fm.url)}" alt="" ${reserva(n)} width="1200" height="675">${fm.credito ? `<figcaption>${fm.credito === ARTE || /^(imagem|arte) ilustrativa/i.test(fm.credito) ? "" : "Foto: "}${esc(fm.credito)}</figcaption>` : ""}</figure>`
       : n.imagem
         ? `<img class="card-mat" src="${esc(n.imagem)}" alt="Card da notícia: ${esc(n.titulo)}" width="1080" height="1350">`
         : "";
@@ -1337,7 +1344,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "30";
+const VERSAO_SITE = "31";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {

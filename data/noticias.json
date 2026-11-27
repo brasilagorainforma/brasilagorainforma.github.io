@@ -444,7 +444,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/angra-dos-reis-registra-maior-volume-de-chuva-no-estado-nesta-quinta",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/1_angra_dos_reis_panorama_2010.jpg/960px-1_angra_dos_reis_panorama_2010.jpg",
+      "credito_foto": "Angra dos Reis (arquivo). chensiyuan / Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
       "id": "2026-11-26-home-office-o-vilao-nao-e-a-postura-e-ficar-parado-dizem-fis",
@@ -459,7 +461,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/ergonomia-home-office-estudos-mostram-que-o-problema-e-ficar-parado",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Woman_stretches_at_home_office_desk_while_working_on_laptop.jpg/960px-Woman_stretches_at_home_office_desk_while_working_on_laptop.jpg",
+      "credito_foto": "Imagem ilustrativa: Shixart1985 / Wikimedia Commons (CC BY 2.0)"
     },
     {
       "id": "2026-11-26-cocos-do-nordeste-viram-patrimonio-cultural-do-brasil",
@@ -580,7 +584,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/investimento-estrangeiro-no-pais-chega-us-1416-trilhao-em-2025",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Edif%C3%ADcio_%22Sede%22_do_Banco_Central_do_Brasil_em_Bras%C3%ADlia.jpg/960px-Edif%C3%ADcio_%22Sede%22_do_Banco_Central_do_Brasil_em_Bras%C3%ADlia.jpg",
+      "credito_foto": "Banco Central do Brasil / Wikimedia Commons (CC BY 2.0)"
     },
     {
       "id": "2026-11-26-pgr-denuncia-gustavo-gayer-por-desvio-da-cota-parlamentar",
@@ -766,7 +772,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/bolsa-sobe-6-e-tem-maior-alta-desde-o-1o-turno-dolar-cai-r-574",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Bovespa_Traders.jpg",
+      "credito_foto": "Bolsa de São Paulo (arquivo). Léo Pinheiro / Wikimedia Commons (CC BY-SA 3.0)"
     },
     {
       "id": "2026-11-26-ensino-superior-bate-recorde-com-10-6-milhoes-de-matriculas",
@@ -1030,7 +1038,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/saude/noticia/2026-11/tupancireta-governo-envia-equipe-e-kits-emergenciais-para-atendimento",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/IBPA_134847_-_Minist%C3%A9rio_da_Sa%C3%BAde%2C_atrav%C3%A9s_da_For%C3%A7a_Nacional_do_SUS%2C_-_2024-05-13_-_Cristine_Rochol-PMPA.jpg/960px-IBPA_134847_-_Minist%C3%A9rio_da_Sa%C3%BAde%2C_atrav%C3%A9s_da_For%C3%A7a_Nacional_do_SUS%2C_-_2024-05-13_-_Cristine_Rochol-PMPA.jpg",
+      "credito_foto": "Força Nacional do SUS em atendimento anterior (arquivo). Cristine Rochol/PMPA / Wikimedia Commons"
     },
     {
       "id": "2026-11-25-tcu-arquiva-multas-a-dilma-e-ex-auxiliares-no-caso-das-pedal",
@@ -1133,7 +1143,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/governo-lanca-campanha-copa-mais-brasileira-do-mundo",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/01.07.2023_-_Encontro_com_a_Sele%C3%A7%C3%A3o_Brasileira_Feminina_de_Futebol_%2853018806135%29.jpg/960px-01.07.2023_-_Encontro_com_a_Sele%C3%A7%C3%A3o_Brasileira_Feminina_de_Futebol_%2853018806135%29.jpg",
+      "credito_foto": "Seleção feminina, arquivo 2023. Palácio do Planalto / Wikimedia Commons (CC BY 2.0)"
     },
     {
       "id": "2026-11-25-filosofia-e-sociologia-podem-voltar-com-2-horas-por-semana-n",
@@ -1164,7 +1176,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/congo-do-es-e-quilombo-frechal-ma-tornam-se-patrimonios-culturais",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Festa_de_congo_na_Serra_ES.jpg/960px-Festa_de_congo_na_Serra_ES.jpg",
+      "credito_foto": "Festa de congo na Serra (ES). Gustavo Azevedo / Wikimedia Commons (domínio público)"
     },
     {
       "id": "2026-11-25-feira-nacional-da-reforma-agraria-reune-80-expositores-em-br",
@@ -1183,7 +1197,9 @@
         "data": "2026-11-25",
         "fim": "2026-11-28",
         "local": "ICC Sul, UnB, Brasília (DF)"
-      }
+      },
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/III_Feira_Nacional_da_Reforma_Agr%C3%A1ria_07.jpg/960px-III_Feira_Nacional_da_Reforma_Agr%C3%A1ria_07.jpg",
+      "credito_foto": "Edição anterior, em São Paulo (arquivo). Joalpe / Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
       "id": "2026-11-25-copa-feminina-de-2027-todas-as-sedes-terao-gramado-hibrido",
@@ -1231,7 +1247,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/ministerio-publico-pede-intervencao-judicial-no-corinthians-por-divida",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Fachada_da_entrada_principal_da_sede_social_do_Corinthians_%28Parque_S%C3%A3o_Jorge%29%2C_S%C3%A3o_Paulo%2C_Brasil.jpg/960px-Fachada_da_entrada_principal_da_sede_social_do_Corinthians_%28Parque_S%C3%A3o_Jorge%29%2C_S%C3%A3o_Paulo%2C_Brasil.jpg",
+      "credito_foto": "Sede do Corinthians. Rafael Henrique Serra / Wikimedia Commons (CC BY-SA 4.0)"
     },
     {
       "id": "2026-11-24-estadios-da-copa-feminina-terao-salas-lilas-para-denuncias-d",
@@ -1293,7 +1311,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/brasil-vence-canada-e-volta-elite-da-billie-jean-king-cup",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Lu%C3%ADsa_Stefani_e_Laura_Pigossi.jpg/960px-Lu%C3%ADsa_Stefani_e_Laura_Pigossi.jpg",
+      "credito_foto": "Luisa Stefani e Laura Pigossi (arquivo). Breno Barros / Wikimedia Commons (CC BY 3.0 BR)"
     },
     {
       "id": "2026-11-22-judo-brasil-leva-bronze-por-equipes-no-mundial-junior",
@@ -1338,7 +1358,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/flamengo-empata-com-palmeiras-e-e-campeao-brasileiro-de-2026",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Festejando_el_gol_Flamengo.jpg/960px-Festejando_el_gol_Flamengo.jpg",
+      "credito_foto": "Torcida do Flamengo (arquivo). Ivan Hernández / Wikimedia Commons (CC BY 2.0)"
     },
     {
       "id": "2026-11-21-boca-juniors-vence-o-atletico-mg-e-fica-com-a-sul-americana",
@@ -1353,7 +1375,9 @@
       ],
       "fonte": "Agência Brasil",
       "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/boca-juniors-vence-sul-americana-sobre-o-atletico-mg",
-      "imagem": ""
+      "imagem": "",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/1/15/A_torcida_do_Clube_Atl%C3%A9tico_Mineiro_na_arquibancada.jpg",
+      "credito_foto": "Torcida do Atlético-MG (arquivo). Pedro00 / Wikimedia Commons (domínio público)"
     },
     {
       "id": "2026-11-21-selecao-sub-17-estreia-na-copa-do-mundo-com-vitoria-sobre-a",
