@@ -6,7 +6,7 @@
 try {
   importScripts("assets/onesignal/OneSignalSDK.sw.js");
 } catch (e) {}
-const VERSAO = "bai-v34";
+const VERSAO = "bai-v35";
 const BASICOS = [
   "./",
   "index.html",

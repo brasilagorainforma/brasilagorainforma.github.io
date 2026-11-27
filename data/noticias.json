@@ -1,6 +1,78 @@
 {
   "noticias": [
     {
+      "id": "2026-11-27-13o-salario-primeira-parcela-tem-de-cair-na-conta-ate-segund",
+      "data": "2026-11-27",
+      "editoria": "SEU DINHEIRO",
+      "titulo": "13º salário: primeira parcela tem de cair na conta até segunda-feira (30)",
+      "resumo": "Empresas e órgãos públicos têm até segunda-feira (30) para pagar a primeira parcela do 13º salário de 2026. Ela corresponde, em regra, à metade do valor, sem desconto de INSS nem de Imposto de Renda.",
+      "texto": [
+        "Empresas e órgãos públicos têm até segunda-feira (30) para pagar a primeira parcela do 13º salário de 2026. Ela corresponde, em regra, à metade do valor, sem desconto de INSS nem de Imposto de Renda.",
+        "A segunda parcela, já com os descontos, venceria em 20 de dezembro, mas a data cai num domingo. Por isso, o pagamento tem de sair até sexta-feira, 18 de dezembro.",
+        "Têm direito trabalhadores com carteira assinada (urbanos, rurais e domésticos), servidores, avulsos, intermitentes (de forma proporcional), aposentados e pensionistas. Autônomos, informais e estagiários não recebem."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/empresas-tem-ate-30-de-novembro-para-pagar-primeira-parcela-do-13o",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/Ri95VhHlfWyevyWkc1pFClTOTfs=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/07/10/_raf1006_1.jpg",
+      "credito_foto": "Rafa Neddermeyer/Agência Brasil",
+      "evento": {
+        "data": "2026-11-30",
+        "local": "Prazo da 1ª parcela do 13º salário"
+      }
+    },
+    {
+      "id": "2026-11-27-inss-veja-o-dia-do-pagamento-de-novembro-e-do-13o-pelo-final",
+      "data": "2026-11-27",
+      "editoria": "SERVIÇO",
+      "titulo": "INSS: veja o dia do pagamento de novembro e do 13º pelo final do cartão",
+      "resumo": "O INSS paga até 7 de dezembro os benefícios de novembro. Junto vem a parcela única do 13º para quem passou a receber depois de abril; quem já recebia antes ganhou o abono em duas parcelas, entre abril e junho.",
+      "texto": [
+        "O INSS paga até 7 de dezembro os benefícios de novembro. Junto vem a parcela única do 13º para quem passou a receber depois de abril; quem já recebia antes ganhou o abono em duas parcelas, entre abril e junho.",
+        "Para quem ganha até um salário mínimo (R$ 1.621), o depósito segue o último número do cartão, sem o dígito depois do traço: final 4 hoje (27), final 5 em 30/11, 6 em 1º/12, 7 em 2/12, 8 em 3/12, 9 em 4/12 e 0 em 7/12.",
+        "Acima do mínimo: finais 1 e 6 em 1º/12, 2 e 7 em 2/12, 3 e 8 em 3/12, 4 e 9 em 4/12, 5 e 0 em 7/12. O número do benefício aparece no app Meu INSS (Extrato de Pagamento) ou pelo telefone 135. Quem recebe BPC não tem 13º."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/inss-comeca-pagar-decimo-terceiro-salario-nesta-terca-feira-24",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/tsG2tn9q2XJMFABad1jItF4pssc=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/atoms/image/966946-07072015-dsc_5210.jpg",
+      "credito_foto": "Agência da Previdência (arquivo). Marcelo Camargo/Agência Brasil"
+    },
+    {
+      "id": "2026-11-27-jornada-5x2-como-fica-a-hora-de-trabalho-e-a-hora-extra-a-pa",
+      "data": "2026-11-27",
+      "editoria": "EMPREGO",
+      "titulo": "Jornada 5x2: como fica a hora de trabalho e a hora extra a partir de 16 de dezembro",
+      "resumo": "O Ministério do Trabalho publicou as regras complementares da jornada 5x2, que começa em 16 de dezembro: cinco dias de trabalho e dois de descanso por semana, cada um de 24 horas seguidas. O limite semanal cai de 44 para 42 horas e, em dezembro de 2027, para 40.",
+      "texto": [
+        "O Ministério do Trabalho publicou as regras complementares da jornada 5x2, que começa em 16 de dezembro: cinco dias de trabalho e dois de descanso por semana, cada um de 24 horas seguidas. O limite semanal cai de 44 para 42 horas e, em dezembro de 2027, para 40.",
+        "Com o mesmo salário e menos horas, a hora vale mais, e a hora extra também. A conta é dividir o salário mensal pelo divisor, que passa de 220 para 210. Num salário de R$ 5,5 mil, a hora sobe de R$ 25 para R$ 26,19.",
+        "Acordo ou convenção coletiva pode distribuir as folgas de outro jeito ao longo do mês, desde que a média seja de dois dias por semana e haja pelo menos uma folga a cada seis dias de trabalho."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/jornada-5x2-veja-como-ficam-regras-de-salario-folgas-e-horas-extras",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/A_Consolida%C3%A7%C3%A3o_das_Leis_do_Trabalho_e_a_garantia_de_direitos_trabalhistas_mediante_a_Carteira_de_Trabalho.png/960px-A_Consolida%C3%A7%C3%A3o_das_Leis_do_Trabalho_e_a_garantia_de_direitos_trabalhistas_mediante_a_Carteira_de_Trabalho.png",
+      "credito_foto": "Imagem ilustrativa: EPTrilhas / Wikimedia Commons (CC BY 4.0)"
+    },
+    {
+      "id": "2026-11-27-durigan-alcolumbre-motta-e-fiesp-elogiam-escolha-de-trabuco",
+      "data": "2026-11-27",
+      "editoria": "POLÍTICA",
+      "titulo": "Durigan, Alcolumbre, Motta e Fiesp elogiam escolha de Trabuco para a Fazenda",
+      "resumo": "A escolha do banqueiro Luiz Carlos Trabuco, de 75 anos, presidente do Conselho do Bradesco, para comandar o Ministério da Fazenda a partir de 2027 teve reação positiva de políticos e do setor produtivo.",
+      "texto": [
+        "A escolha do banqueiro Luiz Carlos Trabuco, de 75 anos, presidente do Conselho do Bradesco, para comandar o Ministério da Fazenda a partir de 2027 teve reação positiva de políticos e do setor produtivo.",
+        "O atual ministro, Dario Durigan, que fica no cargo até a transição, desejou bom trabalho e se pôs à disposição. Os presidentes do Senado, Davi Alcolumbre, e da Câmara, Hugo Motta, citaram a experiência de Trabuco e prometeram diálogo com o Congresso.",
+        "A Fiesp destacou a experiência empresarial do futuro ministro, e a Febraban lembrou os 58 anos dele no Bradesco, onde começou como escriturário e foi presidente executivo."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/economia/noticia/2026-11/veja-repercussao-da-escolha-de-trabuco-para-o-ministerio-da-fazenda",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/Cj2WmsXWU4W3zJ1qn7SEPvgsA5Y=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/raf03857.jpg",
+      "credito_foto": "Rafa Neddermeyer/Agência Brasil"
+    },
+    {
       "id": "2026-11-26-raio-atinge-plataforma-da-petrobras-no-pre-sal-ninguem-se-fe",
       "data": "2026-11-26",
       "hora": "22h",
@@ -814,6 +886,23 @@
         "fim": "2026-11-28",
         "local": "Itaipu Parquetec, Foz do Iguaçu (PR)"
       }
+    },
+    {
+      "id": "2026-11-26-atletico-mg-empata-com-o-corinthians-nos-acrescimos-e-segue",
+      "data": "2026-11-26",
+      "editoria": "BRASILEIRÃO",
+      "titulo": "Atlético-MG empata com o Corinthians nos acréscimos e segue fora do G-6",
+      "resumo": "Atlético-MG e Corinthians empataram por 1 a 1 na quarta-feira (25), na Arena MRV, em Belo Horizonte, no jogo que fechou a 36ª rodada do Brasileirão. Kaio, de cabeça, abriu o placar para o Corinthians aos 25 do segundo tempo, e Tomás Cuello empatou aos 47.",
+      "texto": [
+        "Atlético-MG e Corinthians empataram por 1 a 1 na quarta-feira (25), na Arena MRV, em Belo Horizonte, no jogo que fechou a 36ª rodada do Brasileirão. Kaio, de cabeça, abriu o placar para o Corinthians aos 25 do segundo tempo, e Tomás Cuello empatou aos 47.",
+        "O Galo, que vinha de oito jogos sem vencer e da derrota na final da Sul-Americana, chegou a 52 pontos, em 7º, dois atrás do Bahia, último do G-6, a zona da Libertadores.",
+        "O Corinthians tem 41 pontos, os mesmos de Grêmio e Mirassol, que abre a zona de rebaixamento. Faltam duas rodadas."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/esportes/noticia/2026-11/atletico-mg-e-corinthians-movimentam-pontas-da-tabela-do-brasileirao",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/z_a3TjPJVhegH2bQkHkCHVl4LNk=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/25/55290145392_88a1b04af4_o-scaled.jpg",
+      "credito_foto": "Atlético-MG x Corinthians (arquivo). Pedro Souza/Atlético"
     },
     {
       "id": "2026-11-25-atletico-mg-empata-no-fim-e-corinthians-segue-ameacado-no-br",
