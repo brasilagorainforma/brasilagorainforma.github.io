@@ -1,7 +1,7 @@
 // Brasil Agora Informa: monta topo, capa, seções, agenda e matéria a partir de data/noticias.json
 // Para ligar uma rede nova, basta preencher o link dela aqui (vazio = escondida).
 const REDES = {
-  whatsapp: "",
+  whatsapp: "https://whatsapp.com/channel/0029Vb9aizt5Ejy0K0Xopf1O",
   instagram: "https://www.instagram.com/brasilagorainforma/",
   facebook: "",
   tiktok: "",
