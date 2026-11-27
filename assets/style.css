@@ -928,3 +928,7 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
 .voltar,.vazio,a.voltar{color:var(--cinza)}
 .box *{border-color:var(--linha)}
 .lateral .box p,.lateral .box li,.lateral .box span{color:#d5deee}
+.agora b,.mais,.meta .fonte,.voltar{color:#8fb4ff}
+.mais:hover{color:var(--ouro)}
+.btn.claro{background:#10264d;color:#fff;border-color:var(--linha)}
+.secoes a[aria-current=page]{color:#fff}
