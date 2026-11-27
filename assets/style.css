@@ -932,3 +932,15 @@ body{background:radial-gradient(1200px 600px at 80% -10%,rgba(29,79,158,.25),tra
 .mais:hover{color:var(--ouro)}
 .btn.claro{background:#10264d;color:#fff;border-color:var(--linha)}
 .secoes a[aria-current=page]{color:#fff}
+.cotacoes,.lista-capitais{list-style:none;display:flex;flex-direction:column}
+.cotacoes li{display:grid;grid-template-columns:1fr auto 74px;gap:8px;align-items:baseline;padding:8px 0;border-bottom:1px solid var(--linha)}
+.cotacoes li:last-child,.lista-capitais li:last-child{border-bottom:0}
+.cotacoes span{color:#d5deee;font-weight:600}
+.cotacoes b{font:800 17px Archivo,sans-serif;color:#fff}
+.cotacoes em{font-style:normal;font-size:13px;font-weight:800;text-align:right}
+.cotacoes .sobe{color:#3ddc84}.cotacoes .cai{color:#ff6b6b}
+.lista-capitais li{display:grid;grid-template-columns:1fr 26px 44px 74px;gap:6px;align-items:center;padding:6px 0;border-bottom:1px solid var(--linha);font-size:14px}
+.lista-capitais span{color:#d5deee}
+.lista-capitais b{font:800 16px Archivo,sans-serif;color:#fff;text-align:right}
+.lista-capitais small{color:var(--cinza);text-align:right}
+.box .credito{font-size:11px;color:var(--cinza);margin-top:8px}

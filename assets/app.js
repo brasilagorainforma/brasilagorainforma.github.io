@@ -339,6 +339,55 @@ async function carregarTempo() {
   }
 }
 
+// ---------- blocos de serviço: cotações e tempo nas capitais ----------
+const mercadoBox = () =>
+  `<section class="box mercado" id="mercado"><h2 class="box-t">Mercado agora</h2><p class="mini">Carregando…</p></section>`;
+async function carregarMercado() {
+  const el = $("#mercado");
+  if (!el) return;
+  try {
+    const d = await (await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,GBP-BRL,ARS-BRL,BTC-BRL")).json();
+    const nomes = { USDBRL: "Dólar", EURBRL: "Euro", GBPBRL: "Libra", ARSBRL: "Peso argentino", BTCBRL: "Bitcoin" };
+    const fmt = (v, k) =>
+      Number(v).toLocaleString("pt-BR", { style: "currency", currency: "BRL", minimumFractionDigits: k === "BTCBRL" ? 0 : k === "ARSBRL" ? 4 : 2, maximumFractionDigits: k === "BTCBRL" ? 0 : k === "ARSBRL" ? 4 : 2 });
+    const linhas = Object.keys(nomes)
+      .filter((k) => d[k])
+      .map((k) => {
+        const v = Number(d[k].pctChange);
+        return `<li><span>${nomes[k]}</span><b>${fmt(d[k].bid, k)}</b><em class="${v >= 0 ? "sobe" : "cai"}">${v >= 0 ? "▲" : "▼"} ${Math.abs(v).toFixed(2).replace(".", ",")}%</em></li>`;
+      })
+      .join("");
+    el.innerHTML = `<h2 class="box-t">Mercado agora</h2><ul class="cotacoes">${linhas}</ul><p class="credito">Cotação de compra · Dados: AwesomeAPI</p>`;
+  } catch {
+    el.remove();
+  }
+}
+const CAPITAIS = [
+  ["São Paulo", -23.55, -46.63], ["Rio de Janeiro", -22.91, -43.17], ["Belo Horizonte", -19.92, -43.94],
+  ["Salvador", -12.97, -38.5], ["Recife", -8.05, -34.88], ["Fortaleza", -3.72, -38.54],
+  ["Manaus", -3.12, -60.02], ["Belém", -1.46, -48.5], ["Curitiba", -25.43, -49.27],
+  ["Porto Alegre", -30.03, -51.23], ["Goiânia", -16.69, -49.26], ["Brasília", -15.79, -47.88],
+];
+const capitaisBox = () =>
+  `<section class="box capitais" id="capitais"><h2 class="box-t">Tempo nas capitais</h2><p class="mini">Carregando…</p></section>`;
+async function carregarCapitais() {
+  const el = $("#capitais");
+  if (!el) return;
+  try {
+    const u = `https://api.open-meteo.com/v1/forecast?latitude=${CAPITAIS.map((c) => c[1]).join(",")}&longitude=${CAPITAIS.map((c) => c[2]).join(",")}&current=temperature_2m,weather_code&daily=temperature_2m_max,temperature_2m_min&forecast_days=1&timezone=America%2FSao_Paulo`;
+    const d = await (await fetch(u)).json();
+    const arr = Array.isArray(d) ? d : [d];
+    el.innerHTML = `<h2 class="box-t">Tempo nas capitais</h2><ul class="lista-capitais">${arr
+      .map((x, i) => {
+        const [ic] = CLIMA[x.current.weather_code] || ["🌡️"];
+        return `<li><span>${CAPITAIS[i][0]}</span><i>${ic}</i><b>${Math.round(x.current.temperature_2m)}°</b><small>${Math.round(x.daily.temperature_2m_min[0])}° / ${Math.round(x.daily.temperature_2m_max[0])}°</small></li>`;
+      })
+      .join("")}</ul><p class="credito">Agora · mín/máx de hoje · Dados: Open-Meteo</p>`;
+  } catch {
+    el.remove();
+  }
+}
+
 const telefonesBox =
   () => `<section class="box"><h2 class="box-t">Telefones úteis</h2><ul class="fones">
     ${TELEFONES.map(([n, s]) => `<li><a href="tel:${n}"><b>${n}</b> ${s}</a></li>`).join("")}</ul></section>`;
@@ -443,11 +492,13 @@ async function capa() {
     ${zapFaixa()}
     <div class="capa">
       <div><h2 class="secao">Últimas notícias</h2><div class="feed">${ultimas.map(linhaHTML).join("")}</div></div>
-      <aside class="lateral">${tempoBox()}${agendaBox(lista)}${telefonesBox()}</aside>
+      <aside class="lateral">${mercadoBox()}${tempoBox()}${capitaisBox()}${agendaBox(lista)}${telefonesBox()}</aside>
     </div>
     ${blocos}
     ${sigaHTML()}`;
   carregarTempo();
+  carregarMercado();
+  carregarCapitais();
   mostrarInstalar();
   mostrarAvisos();
   efeitos3D();
@@ -1126,7 +1177,7 @@ setTimeout(() => {
 }, 750);
 
 // número da versão no rodapé (para saber se o celular está com a versão nova)
-const VERSAO_SITE = "19";
+const VERSAO_SITE = "20";
 setTimeout(() => {
   const r = document.querySelector(".rodape .wrap");
   if (r && !document.querySelector(".versao")) {
