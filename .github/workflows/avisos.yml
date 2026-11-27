@@ -1,0 +1,43 @@
+name: Avisos no celular
+on:
+  push:
+    branches: [main]
+    paths: [data/noticias.json]
+  # aviso avulso, pela aba Actions > Avisos no celular > Run workflow
+  workflow_dispatch:
+    inputs:
+      titulo:
+        description: "Título do aviso"
+        required: true
+        default: "Brasil Agora Informa: avisos ligados! 🔔"
+      texto:
+        description: "Texto"
+        required: false
+        default: "Agora você recebe as notícias importantes do Brasil na hora."
+permissions:
+  contents: read
+concurrency:
+  group: avisos
+  cancel-in-progress: false
+jobs:
+  avisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      # espera o GitHub Pages publicar a notícia antes de avisar (o link precisa abrir)
+      - if: github.event_name == 'push'
+        run: sleep 90
+      - if: github.event_name == 'push'
+        run: python3 scripts/avisar_novas.py
+        env:
+          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
+      - if: github.event_name == 'workflow_dispatch'
+        run: python3 scripts/notificar.py --titulo "$TITULO" --texto "$TEXTO"
+        env:
+          TITULO: ${{ inputs.titulo }}
+          TEXTO: ${{ inputs.texto }}
+          ONESIGNAL_APP_ID: ${{ vars.ONESIGNAL_APP_ID }}
+          ONESIGNAL_API_KEY: ${{ secrets.ONESIGNAL_API_KEY }}
