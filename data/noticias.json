@@ -215,6 +215,54 @@
       "credito_foto": "Arte de divulgação. Marketing/EBC"
     },
     {
+      "id": "2026-11-28-brasil-vence-os-eua-por-92-a-88-no-ibirapuera-e-fica-perto-d",
+      "data": "2026-11-28",
+      "editoria": "ESPORTE",
+      "titulo": "Brasil vence os EUA por 92 a 88 no Ibirapuera e fica perto da Copa do Mundo de Basquete",
+      "resumo": "A seleção brasileira de basquete venceu os Estados Unidos por 92 a 88 na sexta-feira (27), no Ginásio do Ibirapuera, em São Paulo, pelas Eliminatórias da Copa do Mundo de 2027. O ginásio voltou a receber a seleção depois de 42 anos.",
+      "texto": [
+        "A seleção brasileira de basquete venceu os Estados Unidos por 92 a 88 na sexta-feira (27), no Ginásio do Ibirapuera, em São Paulo, pelas Eliminatórias da Copa do Mundo de 2027. O ginásio voltou a receber a seleção depois de 42 anos.",
+        "Os americanos foram melhores nos dois primeiros quartos, mas o Brasil virou depois do intervalo. Lucas Dias, com 24 pontos, e Yago, com 16, foram os cestinhas. Com a vitória, o Brasil igualou a campanha dos EUA, líderes do Grupo E: as duas seleções têm 7 vitórias e 2 derrotas, e a vaga está praticamente garantida."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/basquete/em-jogaco-brasil-vence-eua-e-encaminha-vaga-para-copa-do-mundo-de-basquete/",
+      "imagem": "",
+      "foto": "https://brasilagorainforma.github.io/midia/fotos-redes/2026-11-28-basquete-ibirapuera.jpg",
+      "credito_foto": "Ginásio do Ibirapuera (imagem ilustrativa). Sérgio Valle Duarte/Wikimedia Commons, CC BY 3.0"
+    },
+    {
+      "id": "2026-11-28-festival-arpoarte-reune-300-artesaos-de-23-estados-no-rio-co",
+      "data": "2026-11-28",
+      "editoria": "CULTURA",
+      "titulo": "Festival Arpoarte reúne 300 artesãos de 23 estados no Rio, com entrada grátis",
+      "resumo": "Até este domingo (29), das 11h às 21h, o Pier Mauá, na região portuária do Rio de Janeiro, recebe o Festival Arpoarte, feira nacional de arte popular e artesanato. São cerca de 300 artesãos, mestres, associações e cooperativas de 23 estados e do Distrito Federal, além de coletivos indígenas e quilombolas. A entrada é gratuita.",
+      "texto": [
+        "Até este domingo (29), das 11h às 21h, o Pier Mauá, na região portuária do Rio de Janeiro, recebe o Festival Arpoarte, feira nacional de arte popular e artesanato. São cerca de 300 artesãos, mestres, associações e cooperativas de 23 estados e do Distrito Federal, além de coletivos indígenas e quilombolas. A entrada é gratuita.",
+        "É a primeira edição do festival na capital fluminense. O evento tem apoio do Programa do Artesanato Brasileiro, do Ministério do Empreendedorismo, da Microempresa e da Empresa de Pequeno Porte, da Prefeitura do Rio e de secretarias municipal e estadual, com recursos captados pela Lei Rouanet."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/festival-arpoarte-valoriza-trabalho-de-artesaos-do-brasil",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/5CpmkrEAcuJDuCO9cvZug29kDe0=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/27/pecas_produzidas_por_rodney_paiva_ramos_para_sua_marca_cores_da_mata.jpg",
+      "credito_foto": "Peças de artesanato expostas no festival. Pedro Souza/MEMP"
+    },
+    {
+      "id": "2026-11-28-turismo-de-natureza-discute-como-se-adaptar-as-mudancas-do-c",
+      "data": "2026-11-28",
+      "editoria": "CLIMA",
+      "titulo": "Turismo de natureza discute como se adaptar às mudanças do clima",
+      "resumo": "Empresas de ecoturismo e turismo de aventura debatem até este sábado (28), no Abeta Summit, em Campo Grande (MS), como reduzir os impactos das mudanças climáticas no setor. Segundo a presidente da Associação Brasileira das Empresas de Ecoturismo e Turismo de Aventura (Abeta), Lejania Ribeiro, o momento exige planejamento para adaptar as atividades.",
+      "texto": [
+        "Empresas de ecoturismo e turismo de aventura debatem até este sábado (28), no Abeta Summit, em Campo Grande (MS), como reduzir os impactos das mudanças climáticas no setor. Segundo a presidente da Associação Brasileira das Empresas de Ecoturismo e Turismo de Aventura (Abeta), Lejania Ribeiro, o momento exige planejamento para adaptar as atividades.",
+        "Um estudo recente mostra que 83,6% das regiões turísticas do Brasil foram afetadas por seca, enxurrada ou outro extremo climático entre 2020 e 2025. O climatologista José Antonio Marengo, do Cemaden, defendeu que as empresas tracem estratégias para proteger os negócios e a cadeia produtiva."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/meio-ambiente/noticia/2026-11/desafio-das-mudancas-climaticas-mobiliza-setor-do-turismo-de-natureza",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/x287CtCFmZS0zMEcNtvIxuj35cw=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/27/whatsapp_image_2026-11-27_at_17.54.03_1.jpeg",
+      "credito_foto": "Atrativo de turismo de natureza. Fabíola Sinimbu/Agência Brasil"
+    },
+    {
       "id": "2026-11-27-13o-salario-primeira-parcela-tem-de-cair-na-conta-ate-segund",
       "data": "2026-11-27",
       "editoria": "SEU DINHEIRO",
