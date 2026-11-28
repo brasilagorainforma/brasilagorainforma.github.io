@@ -69,6 +69,70 @@
       "credito_foto": "Imagem ilustrativa: mosquito Aedes aegypti. James Gathany/CDC, domínio público"
     },
     {
+      "id": "2026-11-28-vila-nova-vence-o-atletico-go-e-volta-a-serie-a-depois-de-41",
+      "data": "2026-11-28",
+      "editoria": "FUTEBOL",
+      "titulo": "Vila Nova vence o Atlético-GO e volta à Série A depois de 41 anos",
+      "resumo": "O Vila Nova garantiu vaga na Série A do Brasileirão de 2027 ao vencer o rival Atlético-GO por 2 a 0 nesta sexta-feira (27), no jogo decisivo do playoff da Série B. A última vez que o clube goiano jogou a primeira divisão foi em 1985.",
+      "texto": [
+        "O Vila Nova garantiu vaga na Série A do Brasileirão de 2027 ao vencer o rival Atlético-GO por 2 a 0 nesta sexta-feira (27), no jogo decisivo do playoff da Série B. A última vez que o clube goiano jogou a primeira divisão foi em 1985.",
+        "O Vila se junta a Novorizontino e Juventude, que já tinham subido pela classificação. Campeão da Série B, o Novorizontino vai disputar a elite pela primeira vez na história."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/brasileirao/vila-nova-vence-atletico-go-encerra-jejum-e-volta-a-serie-a-apos-41-anos",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Est%C3%A1dio_On%C3%A9sio_Brasileiro_Alvarenga_%2861065%29.jpg/960px-Est%C3%A1dio_On%C3%A9sio_Brasileiro_Alvarenga_%2861065%29.jpg",
+      "credito_foto": "Estádio Onésio Brasileiro Alvarenga, do Vila Nova (arquivo). Boaventuravinicius/Wikimedia Commons, CC BY 4.0"
+    },
+    {
+      "id": "2026-11-28-final-da-libertadores-tem-prorrogacao-veja-o-que-acontece-se",
+      "data": "2026-11-28",
+      "editoria": "FUTEBOL",
+      "titulo": "Final da Libertadores tem prorrogação? Veja o que acontece se Palmeiras x Estudiantes empatar",
+      "resumo": "A final da Libertadores entre Palmeiras e Estudiantes, neste sábado (28), às 17h, em Montevidéu, é em jogo único: quem vencer, por qualquer placar, fica com a taça.",
+      "texto": [
+        "A final da Libertadores entre Palmeiras e Estudiantes, neste sábado (28), às 17h, em Montevidéu, é em jogo único: quem vencer, por qualquer placar, fica com a taça.",
+        "Se o jogo terminar empatado no tempo normal, haverá prorrogação de 30 minutos, em dois tempos de 15, com acréscimos. Se o empate continuar, o campeão sai nos pênaltis, como prevê o regulamento da Conmebol."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/libertadores-da-america/libertadores-tem-prorrogacao-veja-a-regra-para-palmeiras-x-estudiantes",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Estadio_Centenario_%28Montevideo%29_Tribuna_Olimpica_with_Torre_de_los_Homenajes.jpg/960px-Estadio_Centenario_%28Montevideo%29_Tribuna_Olimpica_with_Torre_de_los_Homenajes.jpg",
+      "credito_foto": "Estádio Centenário, em Montevidéu (arquivo). Uwebart/Wikimedia Commons, CC BY-SA 3.0"
+    },
+    {
+      "id": "2026-11-28-corinthians-x-gremio-jogo-de-domingo-vale-fuga-do-rebaixamen",
+      "data": "2026-11-28",
+      "editoria": "BRASILEIRÃO",
+      "titulo": "Corinthians x Grêmio: jogo de domingo vale fuga do rebaixamento",
+      "resumo": "Corinthians e Grêmio se enfrentam neste domingo (29), às 18h30, na Neo Química Arena, em São Paulo, pela 37ª e penúltima rodada do Brasileirão. A transmissão é exclusiva do Prime Video.",
+      "texto": [
+        "Corinthians e Grêmio se enfrentam neste domingo (29), às 18h30, na Neo Química Arena, em São Paulo, pela 37ª e penúltima rodada do Brasileirão. A transmissão é exclusiva do Prime Video.",
+        "Os dois têm 41 pontos e a mesma campanha. O Corinthians é o 15º, à frente pelo saldo de gols, e o Grêmio é o primeiro time fora da zona de rebaixamento. O Mirassol, também com 41, é o 17º, e o Internacional, com 38, é o último que ainda pode escapar. Remo e Chapecoense já caíram."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/brasileirao/corinthians-x-gremio-horario-e-onde-assistir-ao-jogo-do-brasileirao-2",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Corinthians_v_Athl%C3%A9tico-PR%2C_Neo_Qu%C3%ADmica_Arena%2C_S%C3%A3o_Paulo%2C_2026.jpg/960px-Corinthians_v_Athl%C3%A9tico-PR%2C_Neo_Qu%C3%ADmica_Arena%2C_S%C3%A3o_Paulo%2C_2026.jpg",
+      "credito_foto": "Neo Química Arena (arquivo). Hagazin444/Wikimedia Commons, CC0"
+    },
+    {
+      "id": "2026-11-28-tv-brasil-homenageia-o-sambista-luiz-carlos-da-vila-neste-sa",
+      "data": "2026-11-28",
+      "editoria": "CULTURA",
+      "titulo": "TV Brasil homenageia o sambista Luiz Carlos da Vila neste sábado, com músicas inéditas",
+      "resumo": "O programa Cena Musical, da TV Brasil, exibe neste sábado (28), às 23h, uma edição especial com Augusto Martins e Cláudio Jorge. Os dois apresentam o show Coisas Guardadas Pra Te Dar, dedicado à obra do sambista Luiz Carlos da Vila.",
+      "texto": [
+        "O programa Cena Musical, da TV Brasil, exibe neste sábado (28), às 23h, uma edição especial com Augusto Martins e Cláudio Jorge. Os dois apresentam o show Coisas Guardadas Pra Te Dar, dedicado à obra do sambista Luiz Carlos da Vila.",
+        "No espetáculo, a dupla resgata composições inéditas deixadas pelo sambista e guardadas pela família ao longo dos anos. O repertório tem até um dueto com a voz do próprio Luiz Carlos da Vila."
+      ],
+      "fonte": "Agência Brasil",
+      "link": "https://agenciabrasil.ebc.com.br/cultura/noticia/2026-11/luiz-carlos-da-vila-recebe-homenagem-no-cena-musical-da-tv-brasil",
+      "imagem": "",
+      "foto": "https://imagens.ebc.com.br/7_tgv8BJ3JJ6WH-bXAYvActsteo=/1600x800/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2026/11/27/1729512646671644c6929c3-1729512646-3x2-md.jpg",
+      "credito_foto": "Augusto Martins e Cláudio Jorge. TV Brasil/Divulgação"
+    },
+    {
       "id": "2026-11-27-13o-salario-primeira-parcela-tem-de-cair-na-conta-ate-segund",
       "data": "2026-11-27",
       "editoria": "SEU DINHEIRO",
