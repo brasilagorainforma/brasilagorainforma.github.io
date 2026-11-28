@@ -1,6 +1,74 @@
 {
   "noticias": [
     {
+      "id": "2026-11-28-palmeiras-x-estudiantes-final-da-libertadores-e-hoje-as-17h",
+      "data": "2026-11-28",
+      "editoria": "FUTEBOL",
+      "titulo": "Palmeiras x Estudiantes: final da Libertadores é hoje, às 17h, em Montevidéu",
+      "resumo": "Palmeiras e Estudiantes, da Argentina, decidem a Copa Libertadores neste sábado (28), às 17h (horário de Brasília), no Estádio Centenário, em Montevidéu, no Uruguai. A final tem transmissão da Globo, da GE TV, da ESPN e do Disney+.",
+      "texto": [
+        "Palmeiras e Estudiantes, da Argentina, decidem a Copa Libertadores neste sábado (28), às 17h (horário de Brasília), no Estádio Centenário, em Montevidéu, no Uruguai. A final tem transmissão da Globo, da GE TV, da ESPN e do Disney+.",
+        "Os dois times já se encontraram numa decisão do torneio: em 1968, o Estudiantes venceu o Palmeiras e conquistou a primeira das suas quatro Libertadores (1968, 1969, 1970 e 2009). Agora, os argentinos buscam o penta.",
+        "O Palmeiras, vice-campeão no ano passado, tem três títulos da competição (1999, 2020 e 2021) e tenta o quarto."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/futebol/futebol-internacional/libertadores-da-america/palmeiras-x-estudiantes-horario-e-onde-assistir-a-final-da-libertadores",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Panorama_Estadio_Centenario_%28Montevideo%29_Torneo_Clausura_2012.jpg/960px-Panorama_Estadio_Centenario_%28Montevideo%29_Torneo_Clausura_2012.jpg",
+      "credito_foto": "Estádio Centenário, em Montevidéu (arquivo). Uwebart/Wikimedia Commons, CC BY-SA 3.0"
+    },
+    {
+      "id": "2026-11-28-fluminense-perde-para-o-cruzeiro-no-rio-e-hulk-reclama-de-co",
+      "data": "2026-11-28",
+      "editoria": "BRASILEIRÃO",
+      "titulo": "Fluminense perde para o Cruzeiro no Rio, e Hulk reclama de copo atirado pela torcida",
+      "resumo": "O Fluminense perdeu por 1 a 0 para o Cruzeiro nesta sexta-feira (27), no Rio de Janeiro, pelo Campeonato Brasileiro.",
+      "texto": [
+        "O Fluminense perdeu por 1 a 0 para o Cruzeiro nesta sexta-feira (27), no Rio de Janeiro, pelo Campeonato Brasileiro.",
+        "Depois do jogo, o atacante Hulk, que entrou no segundo tempo, disse que foi vaiado e que um copo foi atirado na direção dele pela torcida tricolor. Ele chamou o episódio de falta de respeito e afirmou que nunca viu algo assim em 23 anos de carreira.",
+        "O jogador defendeu o próprio empenho no clube: \"O mais importante é sair de cabeça erguida\", disse."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/futebol/fluminense/hulk-e-direto-sobre-vaias-da-torcida-do-fluminense-nunca-vi-isso",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Estadio_Maracan%C3%A3%2C_Rio_de_Janeiro_BRA.jpg/960px-Estadio_Maracan%C3%A3%2C_Rio_de_Janeiro_BRA.jpg",
+      "credito_foto": "Imagem ilustrativa: Maracanã (arquivo). Stefano Vigorelli/Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "id": "2026-11-28-eleicao-no-sao-paulo-socios-escolhem-100-conselheiros-neste",
+      "data": "2026-11-28",
+      "editoria": "FUTEBOL",
+      "titulo": "Eleição no São Paulo: sócios escolhem 100 conselheiros neste domingo",
+      "resumo": "Os sócios do São Paulo votam neste domingo (29) para escolher os novos membros do Conselho Deliberativo, a primeira etapa da eleição indireta que vai definir o novo presidente do clube. A votação para presidente está prevista para a segunda semana de dezembro.",
+      "texto": [
+        "Os sócios do São Paulo votam neste domingo (29) para escolher os novos membros do Conselho Deliberativo, a primeira etapa da eleição indireta que vai definir o novo presidente do clube. A votação para presidente está prevista para a segunda semana de dezembro.",
+        "Cerca de 6,5 mil sócios do clube social podem votar; sócio-torcedor e dono de cadeira cativa no MorumBis ficam de fora. Cada eleitor escolhe até 20 nomes, de qualquer chapa, em urna eletrônica, de forma presencial e secreta.",
+        "Serão eleitos 100 conselheiros: os 75 mais votados e outros 25 distribuídos de acordo com a proporção das chapas."
+      ],
+      "fonte": "CNN Brasil",
+      "link": "https://www.cnnbrasil.com.br/esportes/futebol/sao-paulo/como-funciona-a-eleicao-no-sao-paulo-entenda-formato-e-veja-candidatos",
+      "imagem": "",
+      "foto": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Est%C3%A1dio_do_Morumbi_em_2023.jpg/960px-Est%C3%A1dio_do_Morumbi_em_2023.jpg",
+      "credito_foto": "Estádio do Morumbi (arquivo). Mtvdanilo/Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "id": "2026-11-28-dia-d-contra-a-dengue-sus-faz-mutirao-neste-sabado-e-vai-man",
+      "data": "2026-11-28",
+      "editoria": "SAÚDE",
+      "titulo": "Dia D contra a dengue: SUS faz mutirão neste sábado e vai mandar alerta no WhatsApp",
+      "resumo": "Estados e municípios fazem neste sábado (28) o Dia D de combate à dengue, à zika e à chikungunya, com ações contra o mosquito Aedes aegypti. Onze unidades da Federação têm atividades marcadas para hoje, e outras 12 fizeram ações durante a semana.",
+      "texto": [
+        "Estados e municípios fazem neste sábado (28) o Dia D de combate à dengue, à zika e à chikungunya, com ações contra o mosquito Aedes aegypti. Onze unidades da Federação têm atividades marcadas para hoje, e outras 12 fizeram ações durante a semana.",
+        "O Ministério da Saúde também lançou uma campanha nacional e vai mandar orientações pelo WhatsApp e pelo Gov.br a mais de 30 milhões de pessoas. A principal medida continua a mesma: não deixar água parada em vasos, pneus, garrafas e outros recipientes.",
+        "Os casos prováveis de dengue caíram 67% em 2026, mas o período de maior transmissão está chegando. Em Amambai (MS) e Garanhuns (PE), haverá soltura de mosquitos que ajudam a barrar a doença."
+      ],
+      "fonte": "Agência Gov",
+      "link": "https://agenciagov.ebc.com.br/noticias/202611/ministerio-da-saude-promove-dia-d-de-combate-a-dengue-e-lanca-campanha-de-prevencao-as-arboviroses",
+      "imagem": "",
+      "foto": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Aedes_aegypti_CDC-Gathany.jpg",
+      "credito_foto": "Imagem ilustrativa: mosquito Aedes aegypti. James Gathany/CDC, domínio público"
+    },
+    {
       "id": "2026-11-27-13o-salario-primeira-parcela-tem-de-cair-na-conta-ate-segund",
       "data": "2026-11-27",
       "editoria": "SEU DINHEIRO",
